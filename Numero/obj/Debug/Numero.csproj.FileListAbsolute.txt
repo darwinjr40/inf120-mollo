@@ -1,0 +1,9 @@
+G:\documentos\vs_2013\Numero\Numero\bin\Debug\Numero.exe.config
+G:\documentos\vs_2013\Numero\Numero\obj\Debug\Numero.csprojResolveAssemblyReference.cache
+G:\documentos\vs_2013\Numero\Numero\obj\Debug\Numero.Form1.resources
+G:\documentos\vs_2013\Numero\Numero\obj\Debug\Numero.Properties.Resources.resources
+G:\documentos\vs_2013\Numero\Numero\obj\Debug\Numero.csproj.GenerateResource.Cache
+G:\documentos\vs_2013\Numero\Numero\bin\Debug\Numero.exe
+G:\documentos\vs_2013\Numero\Numero\bin\Debug\Numero.pdb
+G:\documentos\vs_2013\Numero\Numero\obj\Debug\Numero.exe
+G:\documentos\vs_2013\Numero\Numero\obj\Debug\Numero.pdb
