@@ -12,7 +12,7 @@ namespace Numero
 {
     public partial class Form1 : Form
     {
-        Entero obj;
+        Entero obj, objN2;
         public Form1()
         {
             InitializeComponent();
@@ -21,6 +21,8 @@ namespace Numero
         private void Form1_Load(object sender, EventArgs e)
         {
             obj = new Entero(0);
+            objN2 = new Entero();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -58,6 +60,23 @@ namespace Numero
         private void unir3NUmAscToolStripMenuItem_Click(object sender, EventArgs e)
         {
             obj.Unir3numAsc(int.Parse(textBox3.Text), int.Parse(textBox4.Text), int.Parse(textBox5.Text));
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            obj.SelectParesAsc(this.objN2);
+            String salida = String.Concat(objN2.descargar());
+            textBox2.Text = salida;
+        }
+
+        private void objToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ordAscToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.obj.OrdAsc();
         }
     }
 }

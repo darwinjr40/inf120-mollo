@@ -11,6 +11,8 @@ namespace Numero
         //atributos
         private int n;
         //constructor----------------------------------
+        //ENseguida empezamos,   Hay algo para resolver??
+        //pasen al grupo !!!
         public Entero() //inicial
         {
             n = 0;
@@ -37,6 +39,20 @@ namespace Numero
             return n;
         }
 
+        public bool VerifPrimo()
+        {
+            int i = n / 2;
+            while (i > 1)
+            {
+                if (n % i == 0)
+                {
+                    return false;
+                }
+                i--; // i = i - 1;
+            }
+            return true;
+        }
+
         public void Invertir()
         {
             int d,
@@ -55,6 +71,11 @@ namespace Numero
             Entero aux = new Entero(n); //aux.n = n = 123
             aux.Invertir(); // aux = 321
             return (n == aux.n); //123 = 321
+        }
+
+        public bool EsMultiplo(int x)
+        {            
+            return (n % x == 0); 
         }
 
         public int GetCantDig()
@@ -118,6 +139,55 @@ namespace Numero
                 Unir2numAsc(a, b);
                 UnirNumDerecha(c);
             }
-        }                  
+        }
+        //13. Ordenar los dígitos de un numero entero.
+        //n1{n=26482 => n1{n=22468
+        public void OrdAsc()
+        {
+            int d;
+            int num = this.n;
+            this.cargar(0); //n = 0;
+            while (num > 0)
+            {
+                d = num % 10;
+                num = num / 10;                
+                this.InsertAsc(d);                
+            }
+        }
+
+        //15. Seleccionar dígitos primos de un número entero en otro objeto ordenado.
+        //n1{n=263472 => n2{n=2237
+        //public void SelectParesAsc(int x)
+        public void SelectParesAsc(Entero x)
+        {
+            int d;
+            Entero aux = new Entero();
+            int num = this.n;
+            x.cargar(0); //x.n = 0;
+            while (num > 0)
+            {
+                d = num % 10;
+                num = num / 10;
+                aux.cargar(d);  //aux.n = d;
+                if (aux.VerifPrimo())
+                {
+                    x.InsertAsc(d);  
+                }                
+            }
+        }
+
+        public void InsertAsc(int d)
+        {
+            int aux = 0,
+                 p  = 1;
+            while (d <= (n%10))
+            {
+                aux = (n % 10) * p + aux;
+                p = p * 10;
+                n = n / 10;
+            }
+            this.n = n * 10 + d;
+            this.UnirNumDerecha(aux);
+        }
     }
 }
