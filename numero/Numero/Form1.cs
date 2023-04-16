@@ -78,5 +78,11 @@ namespace Numero
         {
             this.obj.OrdAsc();
         }
+
+        private void esFiboToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            textBox2.Text = this.obj.EsFibo().ToString();
+        }
     }
 }

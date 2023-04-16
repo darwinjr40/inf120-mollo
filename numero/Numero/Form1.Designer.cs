@@ -39,11 +39,12 @@
             this.unirNUmDerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unir2NumASCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unir3NUmAscToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordAscToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ordAscToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.esFiboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,7 +101,8 @@
             this.unir2NumASCToolStripMenuItem,
             this.unir3NUmAscToolStripMenuItem,
             this.toolStripMenuItem2,
-            this.ordAscToolStripMenuItem});
+            this.ordAscToolStripMenuItem,
+            this.esFiboToolStripMenuItem});
             this.objToolStripMenuItem.Name = "objToolStripMenuItem";
             this.objToolStripMenuItem.Size = new System.Drawing.Size(36, 20);
             this.objToolStripMenuItem.Text = "obj";
@@ -109,37 +111,51 @@
             // invertirToolStripMenuItem
             // 
             this.invertirToolStripMenuItem.Name = "invertirToolStripMenuItem";
-            this.invertirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.invertirToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.invertirToolStripMenuItem.Text = "invertir";
             this.invertirToolStripMenuItem.Click += new System.EventHandler(this.invertirToolStripMenuItem_Click);
             // 
             // capicuaToolStripMenuItem
             // 
             this.capicuaToolStripMenuItem.Name = "capicuaToolStripMenuItem";
-            this.capicuaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.capicuaToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.capicuaToolStripMenuItem.Text = "capicua";
             this.capicuaToolStripMenuItem.Click += new System.EventHandler(this.capicuaToolStripMenuItem_Click);
             // 
             // unirNUmDerToolStripMenuItem
             // 
             this.unirNUmDerToolStripMenuItem.Name = "unirNUmDerToolStripMenuItem";
-            this.unirNUmDerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.unirNUmDerToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.unirNUmDerToolStripMenuItem.Text = "unirNUmDer";
             this.unirNUmDerToolStripMenuItem.Click += new System.EventHandler(this.unirNUmDerToolStripMenuItem_Click);
             // 
             // unir2NumASCToolStripMenuItem
             // 
             this.unir2NumASCToolStripMenuItem.Name = "unir2NumASCToolStripMenuItem";
-            this.unir2NumASCToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.unir2NumASCToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.unir2NumASCToolStripMenuItem.Text = "unir2NumASC";
             this.unir2NumASCToolStripMenuItem.Click += new System.EventHandler(this.unir2NumASCToolStripMenuItem_Click);
             // 
             // unir3NUmAscToolStripMenuItem
             // 
             this.unir3NUmAscToolStripMenuItem.Name = "unir3NUmAscToolStripMenuItem";
-            this.unir3NUmAscToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.unir3NUmAscToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.unir3NUmAscToolStripMenuItem.Text = "unir3NUmAsc";
             this.unir3NUmAscToolStripMenuItem.Click += new System.EventHandler(this.unir3NUmAscToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(167, 22);
+            this.toolStripMenuItem2.Text = "14.SelectParesAsc";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // ordAscToolStripMenuItem
+            // 
+            this.ordAscToolStripMenuItem.Name = "ordAscToolStripMenuItem";
+            this.ordAscToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.ordAscToolStripMenuItem.Text = "10.OrdAsc";
+            this.ordAscToolStripMenuItem.Click += new System.EventHandler(this.ordAscToolStripMenuItem_Click);
             // 
             // textBox3
             // 
@@ -162,19 +178,12 @@
             this.textBox5.Size = new System.Drawing.Size(179, 20);
             this.textBox5.TabIndex = 7;
             // 
-            // toolStripMenuItem2
+            // esFiboToolStripMenuItem
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(167, 22);
-            this.toolStripMenuItem2.Text = "14.SelectParesAsc";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
-            // ordAscToolStripMenuItem
-            // 
-            this.ordAscToolStripMenuItem.Name = "ordAscToolStripMenuItem";
-            this.ordAscToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.ordAscToolStripMenuItem.Text = "10.OrdAsc";
-            this.ordAscToolStripMenuItem.Click += new System.EventHandler(this.ordAscToolStripMenuItem_Click);
+            this.esFiboToolStripMenuItem.Name = "esFiboToolStripMenuItem";
+            this.esFiboToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.esFiboToolStripMenuItem.Text = "esFibo";
+            this.esFiboToolStripMenuItem.Click += new System.EventHandler(this.esFiboToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -218,6 +227,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem ordAscToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem esFiboToolStripMenuItem;
     }
 }
 

@@ -189,5 +189,23 @@ namespace Numero
             this.n = n * 10 + d;
             this.UnirNumDerecha(aux);
         }
+
+
+        public bool EsFibo(){
+            int a = 0;
+            int b = 1;
+            int c = 1;
+            while (c <= this.n)
+            {
+                if (c == n)
+                {
+                    return true;
+                }
+                c = a + b;
+                a = b;
+                b = c;
+            }
+            return false;
+        }
     }
 }
