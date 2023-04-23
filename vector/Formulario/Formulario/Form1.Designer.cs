@@ -32,12 +32,13 @@
             this.vector1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.descargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exaelimFiboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.exaelimFiboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.exaintercaMayMenInvertidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +57,8 @@
             this.vector1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cargarToolStripMenuItem,
             this.descargarToolStripMenuItem,
-            this.exaelimFiboToolStripMenuItem});
+            this.exaelimFiboToolStripMenuItem,
+            this.exaintercaMayMenInvertidoToolStripMenuItem});
             this.vector1ToolStripMenuItem.Name = "vector1ToolStripMenuItem";
             this.vector1ToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.vector1ToolStripMenuItem.Text = "Vector1";
@@ -74,6 +76,13 @@
             this.descargarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.descargarToolStripMenuItem.Text = "descargar";
             this.descargarToolStripMenuItem.Click += new System.EventHandler(this.descargarToolStripMenuItem_Click);
+            // 
+            // exaelimFiboToolStripMenuItem
+            // 
+            this.exaelimFiboToolStripMenuItem.Name = "exaelimFiboToolStripMenuItem";
+            this.exaelimFiboToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exaelimFiboToolStripMenuItem.Text = "exa-elimFibo";
+            this.exaelimFiboToolStripMenuItem.Click += new System.EventHandler(this.exaelimFiboToolStripMenuItem_Click);
             // 
             // textBox1
             // 
@@ -107,13 +116,6 @@
             this.textBox4.Size = new System.Drawing.Size(573, 39);
             this.textBox4.TabIndex = 4;
             // 
-            // exaelimFiboToolStripMenuItem
-            // 
-            this.exaelimFiboToolStripMenuItem.Name = "exaelimFiboToolStripMenuItem";
-            this.exaelimFiboToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exaelimFiboToolStripMenuItem.Text = "exa-elimFibo";
-            this.exaelimFiboToolStripMenuItem.Click += new System.EventHandler(this.exaelimFiboToolStripMenuItem_Click);
-            // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,6 +123,13 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(573, 39);
             this.textBox5.TabIndex = 5;
+            // 
+            // exaintercaMayMenInvertidoToolStripMenuItem
+            // 
+            this.exaintercaMayMenInvertidoToolStripMenuItem.Name = "exaintercaMayMenInvertidoToolStripMenuItem";
+            this.exaintercaMayMenInvertidoToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.exaintercaMayMenInvertidoToolStripMenuItem.Text = "exa-intercaMayMenInvertido";
+            this.exaintercaMayMenInvertidoToolStripMenuItem.Click += new System.EventHandler(this.exaintercaMayMenInvertidoToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -156,6 +165,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ToolStripMenuItem exaelimFiboToolStripMenuItem;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ToolStripMenuItem exaintercaMayMenInvertidoToolStripMenuItem;
     }
 }
 

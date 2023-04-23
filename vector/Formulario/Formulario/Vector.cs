@@ -77,5 +77,42 @@ namespace Formulario
             }
         }
 
+        //intercambia dos posiciones del vector
+        public void Inter(int a, int b)
+        {
+            int aux = v[a];
+            v[a] = v[b];
+            v[b] = aux;
+        }
+
+        public void IntercalarMayMenInvertido(int a, int b)
+        {
+            bool sw = true;
+            int x, y;
+            for (int i = b; i >= (a+1); i--)
+            {
+                for (int j = (i-1); j >= a; j--)
+                {
+                    x = v[i];
+                    y = v[j];
+                    if (sw) //mayor
+                    {
+                        if (y > x)
+                        {
+                            this.Inter(i, j);  
+                        }
+                    }
+                    else//menor
+                    {
+                        if (y < x)
+                        {
+                            this.Inter(i, j);
+                        }
+                    }
+                }
+                sw = !sw;
+            }
+        }
+
     }
 }

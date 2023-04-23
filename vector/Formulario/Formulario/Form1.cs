@@ -43,5 +43,12 @@ namespace Formulario
             int b = int.Parse(textBox3.Text);
             this.vector.ElimElemFibo(a, b);
         }
+
+        private void exaintercaMayMenInvertidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBox2.Text);
+            int b = int.Parse(textBox3.Text);
+            this.vector.IntercalarMayMenInvertido(a, b);
+        }
     }
 }
