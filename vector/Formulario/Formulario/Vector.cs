@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualBasic;
+using Microsoft.VisualBasic;
+using System.Windows.Forms;
 using Numero;
 namespace Formulario
 {
@@ -17,14 +20,14 @@ namespace Formulario
             v = new int[100];
         }
         //metodos
-        //public void Cargar(int x)
-        //{
-        //    n = x;
-        //    for (int i = 1; i <= n; i++)
-        //    {
-        //      v[i] =     
-        //    }
-        //}
+        public void Cargar(int dim)
+        {
+            n = dim;
+            for (int i = 1; i <= n; i++)
+            {
+              v[i] = int.Parse(Interaction.InputBox("v["+ i.ToString() +"]", "Ingrese Elemento"));
+            }
+        }
 
         public void CargarRamdom(int x, int a, int b)
         {
@@ -113,6 +116,58 @@ namespace Formulario
                 sw = !sw;
             }
         }
+        //-----------------------------------------------------------
+        //busca x en el vector, retorna la posicion
+        public int BusqSec(int a, int b, int x)
+        {
+            int i = a;
+            while ((i <= b) ){
+                if (v[i] == x)
+                    return i;
+                i++;
+            }
+            return 0;          
+        }
 
+        public bool BusqSecu(int a, int b, int x)
+        {
+            int pos = this.BusqSec(a, b, x);
+            return ( pos > 0);
+        }
+
+        //-----------------------------------------------------------
+        public void Intersec(Vector v1, Vector v2)
+        {
+            int i = 1;
+            int ele;
+            while (i <= v1.n)
+            {
+                ele = v1.v[i];
+                if (v2.BusqSecu(1, v2.n, ele))
+                {
+                    this.addElem(ele); 
+                }
+                i++;  
+            }
+        }
+        //-----------------------------------------------------------
+
+        public void Union(Vector v1, Vector v2)
+        {
+            
+            int ele;
+            for (int i = 1; i <= v1.n; i++)
+            {
+                ele = v1.v[i];
+                this.addElem(ele);
+            }
+
+            for (int i = 1; i <= v2.n; i++)
+            {
+                ele = v2.v[i];
+                if (! this.BusqSecu(1, this.n, ele))
+                  this.addElem(ele);  
+            }
+        }
     }
 }
