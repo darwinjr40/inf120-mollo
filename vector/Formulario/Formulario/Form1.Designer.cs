@@ -30,24 +30,25 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.vector1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.descargarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exaelimFiboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exaintercaMayMenInvertidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.interseccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vector1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.decargarv2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vector2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargarv2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.descargarv2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.cargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.interseccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vector1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.vector2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cargarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.decargarv2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cargarv2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.descargarv2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargarMayMenConFrecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,10 +74,18 @@
             this.exaelimFiboToolStripMenuItem,
             this.exaintercaMayMenInvertidoToolStripMenuItem,
             this.interseccionToolStripMenuItem,
-            this.unionToolStripMenuItem});
+            this.unionToolStripMenuItem,
+            this.cargarMayMenConFrecToolStripMenuItem});
             this.vector1ToolStripMenuItem.Name = "vector1ToolStripMenuItem";
             this.vector1ToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.vector1ToolStripMenuItem.Text = "Vector";
+            // 
+            // cargarToolStripMenuItem1
+            // 
+            this.cargarToolStripMenuItem1.Name = "cargarToolStripMenuItem1";
+            this.cargarToolStripMenuItem1.Size = new System.Drawing.Size(227, 22);
+            this.cargarToolStripMenuItem1.Text = "cargar";
+            this.cargarToolStripMenuItem1.Click += new System.EventHandler(this.cargarToolStripMenuItem1_Click);
             // 
             // cargarToolStripMenuItem
             // 
@@ -105,6 +114,66 @@
             this.exaintercaMayMenInvertidoToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.exaintercaMayMenInvertidoToolStripMenuItem.Text = "exa-intercaMayMenInvertido";
             this.exaintercaMayMenInvertidoToolStripMenuItem.Click += new System.EventHandler(this.exaintercaMayMenInvertidoToolStripMenuItem_Click);
+            // 
+            // interseccionToolStripMenuItem
+            // 
+            this.interseccionToolStripMenuItem.Name = "interseccionToolStripMenuItem";
+            this.interseccionToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.interseccionToolStripMenuItem.Text = "Interseccion";
+            this.interseccionToolStripMenuItem.Click += new System.EventHandler(this.interseccionToolStripMenuItem_Click);
+            // 
+            // unionToolStripMenuItem
+            // 
+            this.unionToolStripMenuItem.Name = "unionToolStripMenuItem";
+            this.unionToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.unionToolStripMenuItem.Text = "union";
+            this.unionToolStripMenuItem.Click += new System.EventHandler(this.unionToolStripMenuItem_Click);
+            // 
+            // vector1ToolStripMenuItem1
+            // 
+            this.vector1ToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cargarToolStripMenuItem2,
+            this.decargarv2ToolStripMenuItem});
+            this.vector1ToolStripMenuItem1.Name = "vector1ToolStripMenuItem1";
+            this.vector1ToolStripMenuItem1.Size = new System.Drawing.Size(58, 20);
+            this.vector1ToolStripMenuItem1.Text = "vector1";
+            // 
+            // cargarToolStripMenuItem2
+            // 
+            this.cargarToolStripMenuItem2.Name = "cargarToolStripMenuItem2";
+            this.cargarToolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
+            this.cargarToolStripMenuItem2.Text = "cargarv1";
+            this.cargarToolStripMenuItem2.Click += new System.EventHandler(this.cargarToolStripMenuItem2_Click);
+            // 
+            // decargarv2ToolStripMenuItem
+            // 
+            this.decargarv2ToolStripMenuItem.Name = "decargarv2ToolStripMenuItem";
+            this.decargarv2ToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.decargarv2ToolStripMenuItem.Text = "decargarv2";
+            this.decargarv2ToolStripMenuItem.Click += new System.EventHandler(this.decargarv2ToolStripMenuItem_Click);
+            // 
+            // vector2ToolStripMenuItem
+            // 
+            this.vector2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cargarv2ToolStripMenuItem,
+            this.descargarv2ToolStripMenuItem});
+            this.vector2ToolStripMenuItem.Name = "vector2ToolStripMenuItem";
+            this.vector2ToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.vector2ToolStripMenuItem.Text = "vector2";
+            // 
+            // cargarv2ToolStripMenuItem
+            // 
+            this.cargarv2ToolStripMenuItem.Name = "cargarv2ToolStripMenuItem";
+            this.cargarv2ToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.cargarv2ToolStripMenuItem.Text = "cargarv2";
+            this.cargarv2ToolStripMenuItem.Click += new System.EventHandler(this.cargarv2ToolStripMenuItem_Click);
+            // 
+            // descargarv2ToolStripMenuItem
+            // 
+            this.descargarv2ToolStripMenuItem.Name = "descargarv2ToolStripMenuItem";
+            this.descargarv2ToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.descargarv2ToolStripMenuItem.Text = "descargarv2";
+            this.descargarv2ToolStripMenuItem.Click += new System.EventHandler(this.descargarv2ToolStripMenuItem_Click);
             // 
             // textBox1
             // 
@@ -146,72 +215,12 @@
             this.textBox5.Size = new System.Drawing.Size(573, 39);
             this.textBox5.TabIndex = 5;
             // 
-            // cargarToolStripMenuItem1
+            // cargarMayMenConFrecToolStripMenuItem
             // 
-            this.cargarToolStripMenuItem1.Name = "cargarToolStripMenuItem1";
-            this.cargarToolStripMenuItem1.Size = new System.Drawing.Size(227, 22);
-            this.cargarToolStripMenuItem1.Text = "cargar";
-            this.cargarToolStripMenuItem1.Click += new System.EventHandler(this.cargarToolStripMenuItem1_Click);
-            // 
-            // interseccionToolStripMenuItem
-            // 
-            this.interseccionToolStripMenuItem.Name = "interseccionToolStripMenuItem";
-            this.interseccionToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
-            this.interseccionToolStripMenuItem.Text = "Interseccion";
-            this.interseccionToolStripMenuItem.Click += new System.EventHandler(this.interseccionToolStripMenuItem_Click);
-            // 
-            // vector1ToolStripMenuItem1
-            // 
-            this.vector1ToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cargarToolStripMenuItem2,
-            this.decargarv2ToolStripMenuItem});
-            this.vector1ToolStripMenuItem1.Name = "vector1ToolStripMenuItem1";
-            this.vector1ToolStripMenuItem1.Size = new System.Drawing.Size(58, 20);
-            this.vector1ToolStripMenuItem1.Text = "vector1";
-            // 
-            // vector2ToolStripMenuItem
-            // 
-            this.vector2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cargarv2ToolStripMenuItem,
-            this.descargarv2ToolStripMenuItem});
-            this.vector2ToolStripMenuItem.Name = "vector2ToolStripMenuItem";
-            this.vector2ToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.vector2ToolStripMenuItem.Text = "vector2";
-            // 
-            // cargarToolStripMenuItem2
-            // 
-            this.cargarToolStripMenuItem2.Name = "cargarToolStripMenuItem2";
-            this.cargarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.cargarToolStripMenuItem2.Text = "cargarv1";
-            this.cargarToolStripMenuItem2.Click += new System.EventHandler(this.cargarToolStripMenuItem2_Click);
-            // 
-            // decargarv2ToolStripMenuItem
-            // 
-            this.decargarv2ToolStripMenuItem.Name = "decargarv2ToolStripMenuItem";
-            this.decargarv2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.decargarv2ToolStripMenuItem.Text = "decargarv2";
-            this.decargarv2ToolStripMenuItem.Click += new System.EventHandler(this.decargarv2ToolStripMenuItem_Click);
-            // 
-            // cargarv2ToolStripMenuItem
-            // 
-            this.cargarv2ToolStripMenuItem.Name = "cargarv2ToolStripMenuItem";
-            this.cargarv2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.cargarv2ToolStripMenuItem.Text = "cargarv2";
-            this.cargarv2ToolStripMenuItem.Click += new System.EventHandler(this.cargarv2ToolStripMenuItem_Click);
-            // 
-            // descargarv2ToolStripMenuItem
-            // 
-            this.descargarv2ToolStripMenuItem.Name = "descargarv2ToolStripMenuItem";
-            this.descargarv2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.descargarv2ToolStripMenuItem.Text = "descargarv2";
-            this.descargarv2ToolStripMenuItem.Click += new System.EventHandler(this.descargarv2ToolStripMenuItem_Click);
-            // 
-            // unionToolStripMenuItem
-            // 
-            this.unionToolStripMenuItem.Name = "unionToolStripMenuItem";
-            this.unionToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
-            this.unionToolStripMenuItem.Text = "union";
-            this.unionToolStripMenuItem.Click += new System.EventHandler(this.unionToolStripMenuItem_Click);
+            this.cargarMayMenConFrecToolStripMenuItem.Name = "cargarMayMenConFrecToolStripMenuItem";
+            this.cargarMayMenConFrecToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.cargarMayMenConFrecToolStripMenuItem.Text = "cargarMayMenConFrec";
+            this.cargarMayMenConFrecToolStripMenuItem.Click += new System.EventHandler(this.cargarMayMenConFrecToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -257,6 +266,7 @@
         private System.Windows.Forms.ToolStripMenuItem cargarv2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem descargarv2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem unionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cargarMayMenConFrecToolStripMenuItem;
     }
 }
 

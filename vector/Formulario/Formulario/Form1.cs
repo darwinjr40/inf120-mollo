@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace Formulario
 {
@@ -99,6 +100,21 @@ namespace Formulario
         private void unionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             vector.Union(vector1, vector2);
+        }
+
+        private void cargarMayMenConFrecToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int a = int.Parse(textBox2.Text);
+                int b = int.Parse(textBox3.Text);
+                vector.CargarElemMayMenWithFrec(a, b, vector1, vector2);
+            }
+            catch (Exception ex)
+            {
+                Interaction.MsgBox(ex.Message);
+            }
+            
         }
     }
 }

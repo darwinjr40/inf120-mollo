@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualBasic;
-using Microsoft.VisualBasic;
 using System.Windows.Forms;
 using Numero;
 namespace Formulario
@@ -167,6 +166,58 @@ namespace Formulario
                 ele = v2.v[i];
                 if (! this.BusqSecu(1, this.n, ele))
                   this.addElem(ele);  
+            }
+        }
+
+        //-----------------------------------------------------------
+        public int GetFrec(int a, int b, int x)
+        {
+            int r = 0;
+            while (a <= b)
+            {
+                if (this.v[a] == x)                
+                    r++;
+                a++;    
+            }
+            return r;
+        }
+        public int GetFrec(int x)
+        {
+            if (this.n == 0)
+                throw new Exception("vector vacio");
+            
+            return this.GetFrec(1, this.n, x); 
+        }
+        //-----------------------------------------------------------
+
+        public void CargarElemMayMenWithFrec(int a, int b, Vector v1, Vector v2)
+        {            
+            if (n > 0)
+            {                                           
+                v1.n = 0;
+                v2.n = 0;
+                int fr = this.GetFrec(a, b, this.v[1]);
+                v1.addElem(this.v[1]);
+                v1.addElem(this.v[1]);
+
+                v2.addElem(fr);
+                v2.addElem(fr);
+                int i = 2; 
+                while (i <= this.n)
+                {
+                    fr = this.GetFrec(a, b, this.v[i]);
+                    if (fr < v2.v[1]) //men
+                    {
+                        v1.v[1] = v[i];
+                        v2.v[1] = fr;
+                    }
+                    if (fr > v2.v[2]) //may
+                    {
+                        v1.v[2] = v[i];
+                        v2.v[2] = fr;
+                    }
+                    i++; 
+                }
             }
         }
     }
