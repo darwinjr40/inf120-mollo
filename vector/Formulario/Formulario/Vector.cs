@@ -188,6 +188,11 @@ namespace Formulario
             
             return this.GetFrec(1, this.n, x); 
         }
+
+        public bool Pertenece(int a, int b, int x)//x=5   => 2
+        {
+            return (this.GetFrec(a,b,x) > 0);
+        }
         //-----------------------------------------------------------
 
         public void CargarElemMayMenWithFrec(int a, int b, Vector v1, Vector v2)
@@ -219,6 +224,31 @@ namespace Formulario
                     i++; 
                 }
             }
+        }
+
+        //-----------------------------------------------------------
+
+        public int GetCantNumPrimosUnicos(int a, int b)
+        {
+            int i = a;
+            int c = 0;
+            Entero objEntero = new Entero();
+            Vector aux = new Vector();
+            while (i <= b)
+            {
+                Interaction.MsgBox(this.v[i].ToString());
+                objEntero.cargar(this.v[i]);
+                if (objEntero.VerifPrimo())
+                {
+                    //if (this.Pertenece(a, i-1, this.v[i] ))
+                    if ( ! this.Pertenece(a, i - 1, objEntero.descargar()))
+                    {
+                        c++;  
+                    }    
+                }
+                i++;
+            }
+            return c;
         }
     }
 }

@@ -31,7 +31,7 @@ namespace Numero
         //metodos
         public void cargar(int x)
         {
-            n = x;
+            this.n = x;
         }
 
         public int descargar()

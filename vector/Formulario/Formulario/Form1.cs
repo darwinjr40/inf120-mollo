@@ -116,5 +116,12 @@ namespace Formulario
             }
             
         }
+
+        private void cantidadNumPrimDifereToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBox2.Text);
+            int b = int.Parse(textBox3.Text);
+            this.textBox5.Text = this.vector.GetCantNumPrimosUnicos(a, b).ToString();
+        }
     }
 }
