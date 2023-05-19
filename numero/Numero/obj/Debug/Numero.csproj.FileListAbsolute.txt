@@ -16,3 +16,12 @@ G:\documentos\vs_2013\Mollo\numero\Numero\obj\Debug\Numero.csprojResolveAssembly
 G:\documentos\vs_2013\Mollo\numero\Numero\obj\Debug\Numero.Form1.resources
 G:\documentos\vs_2013\Mollo\numero\Numero\obj\Debug\Numero.Properties.Resources.resources
 G:\documentos\vs_2013\Mollo\numero\Numero\obj\Debug\Numero.csproj.GenerateResource.Cache
+D:\00_materia\auxiliar\inf120-mollo\numero\Numero\bin\Debug\Numero.exe.config
+D:\00_materia\auxiliar\inf120-mollo\numero\Numero\obj\Debug\Numero.exe
+D:\00_materia\auxiliar\inf120-mollo\numero\Numero\obj\Debug\Numero.pdb
+D:\00_materia\auxiliar\inf120-mollo\numero\Numero\bin\Debug\Numero.exe
+D:\00_materia\auxiliar\inf120-mollo\numero\Numero\bin\Debug\Numero.pdb
+D:\00_materia\auxiliar\inf120-mollo\numero\Numero\obj\Debug\Numero.csprojResolveAssemblyReference.cache
+D:\00_materia\auxiliar\inf120-mollo\numero\Numero\obj\Debug\Numero.Form1.resources
+D:\00_materia\auxiliar\inf120-mollo\numero\Numero\obj\Debug\Numero.Properties.Resources.resources
+D:\00_materia\auxiliar\inf120-mollo\numero\Numero\obj\Debug\Numero.csproj.GenerateResource.Cache

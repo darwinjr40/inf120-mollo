@@ -195,17 +195,13 @@ namespace Numero
             int a = 0;
             int b = 1;
             int c = 1;
-            while (c <= this.n)
-            {
-                if (c == n)
-                {
-                    return true;
-                }
+            while (c < this.n)
+            {                
                 c = a + b;
                 a = b;
                 b = c;
             }
-            return false;
+            return (c == this.n);
         }
     }
 }
