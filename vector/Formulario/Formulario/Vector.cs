@@ -61,7 +61,7 @@ namespace Formulario
         {
             int x;
             int dim = this.n;
-            Entero objEnt = new Entero();
+            Entero objEnt = new Entero();            
             n =  a -1;
             for (int i = a; i <= b; i++)
             {
@@ -183,8 +183,8 @@ namespace Formulario
         }
         public int GetFrec(int x)
         {
-            if (this.n == 0)
-                throw new Exception("vector vacio");
+            //if (this.n == 0)
+            //    throw new Exception("vector vacio");
             
             return this.GetFrec(1, this.n, x); 
         }
@@ -192,6 +192,11 @@ namespace Formulario
         public bool Pertenece(int a, int b, int x)//x=5   => 2
         {
             return (this.GetFrec(a,b,x) > 0);
+        }
+
+        public bool Pertenece(int x)//x=5   => 2
+        {
+            return (this.GetFrec(x) > 0);
         }
         //-----------------------------------------------------------
 
@@ -250,5 +255,24 @@ namespace Formulario
             }
             return c;
         }
+
+        //-----------------------------------------------------------
+        public void DifSimetrica(Vector v1, Vector v2)
+        {
+            this.n = 0;
+            int a;
+            for (int i = 1; i <= v1.n; i++)
+            {
+                a = v1.v[i];
+                if (!v2.Pertenece(a))
+                    //if (!v2.Pertenece(a) && (!this.Pertenece(a)))
+                    this.addElem(a);    
+            }
+            for (int i = 1; i <= v2.n; i++)
+                if (!v1.Pertenece(v2.v[i]))
+                    //if (!v1.Pertenece(v2.v[i]) && (!this.Pertenece(v2.v[i])))
+                    this.addElem(v2.v[i]);
+        }
+        
     }
 }

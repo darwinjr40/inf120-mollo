@@ -75,9 +75,17 @@ namespace Formulario
 
         private void cargarToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            int dim = int.Parse(textBox1.Text);
-            this.vector1.Cargar(dim);
-            this.textBox4.Text = this.vector1.Descargar();
+            try
+            {
+                int dim = int.Parse(textBox1.Text);
+                this.vector1.Cargar(dim);
+                this.textBox4.Text = this.vector1.Descargar();
+            }
+            catch (Exception ex)
+            {
+                Interaction.MsgBox(ex.Message);
+            }   
+            
         }
 
         private void decargarv2ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -87,9 +95,16 @@ namespace Formulario
 
         private void cargarv2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int dim = int.Parse(textBox1.Text);
-            this.vector2.Cargar(dim);
-            this.textBox4.Text = this.vector2.Descargar();
+            try
+            {
+                int dim = int.Parse(textBox1.Text);
+                this.vector2.Cargar(dim);
+                this.textBox4.Text = this.vector2.Descargar();
+            }
+            catch (Exception ex)
+            {
+                Interaction.MsgBox(ex.Message);
+            }            
         }
 
         private void descargarv2ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -122,6 +137,12 @@ namespace Formulario
             int a = int.Parse(textBox2.Text);
             int b = int.Parse(textBox3.Text);
             this.textBox5.Text = this.vector.GetCantNumPrimosUnicos(a, b).ToString();
+        }
+
+        private void diferenciaSimetricav1v2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.vector.DifSimetrica(vector1, vector2);
+            //Interaction.MsgBox(nro.ToString());
         }
     }
 }
