@@ -144,5 +144,12 @@ namespace Formulario
             this.vector.DifSimetrica(vector1, vector2);
             //Interaction.MsgBox(nro.ToString());
         }
+
+        private void eliminarRepetidosDejandoUnicosabToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBox2.Text);
+            int b = int.Parse(textBox3.Text);
+            this.vector.DeleteYDejarElemUnicos(a, b);
+        }
     }
 }

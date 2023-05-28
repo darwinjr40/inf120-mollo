@@ -237,8 +237,7 @@ namespace Formulario
         {
             int i = a;
             int c = 0;
-            Entero objEntero = new Entero();
-            Vector aux = new Vector();
+            Entero objEntero = new Entero();            
             while (i <= b)
             {
                 Interaction.MsgBox(this.v[i].ToString());
@@ -273,6 +272,20 @@ namespace Formulario
                     //if (!v1.Pertenece(v2.v[i]) && (!this.Pertenece(v2.v[i])))
                     this.addElem(v2.v[i]);
         }
-        
+        //-----------------------------------------------------------
+        public void DeleteYDejarElemUnicos(int a, int b)
+        {
+            int dim, e;
+            dim = this.n;
+            this.n = a - 1;
+            for (int i = a; i <= dim; i++)
+            {
+                e = this.v[i];
+                if (i > b)
+                    this.addElem(e);
+                else if (! this.Pertenece(a, i-1, e))
+                         this.addElem(e);
+            }
+        }
     }
 }
