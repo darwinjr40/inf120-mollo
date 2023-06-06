@@ -292,14 +292,11 @@ namespace Formulario
         //modelo 2023-1
         //retorna la posicion del elemento menor
         public int GetPosElemMenor(int a, int b){
-            int pos = a;
-            int ele = this.v[a];
+            int pos = a;            
             a++;
             while (a <= b){
-                if (this.v[a] < ele){
-                    ele = this.v[a];
+                if (this.v[a] < this.v[pos])                   
                     pos = a;
-                }
                 a++;    
             }
             return pos;
