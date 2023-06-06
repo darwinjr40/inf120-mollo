@@ -40,6 +40,7 @@
             this.cargarMayMenConFrecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cantidadNumPrimDifereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diferenciaSimetricav1v2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarRepetidosDejandoUnicosabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vector1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.decargarv2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,7 +52,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.eliminarRepetidosDejandoUnicosabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenarExtremosabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +83,8 @@
             this.cargarMayMenConFrecToolStripMenuItem,
             this.cantidadNumPrimDifereToolStripMenuItem,
             this.diferenciaSimetricav1v2ToolStripMenuItem,
-            this.eliminarRepetidosDejandoUnicosabToolStripMenuItem});
+            this.eliminarRepetidosDejandoUnicosabToolStripMenuItem,
+            this.ordenarExtremosabToolStripMenuItem});
             this.vector1ToolStripMenuItem.Name = "vector1ToolStripMenuItem";
             this.vector1ToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.vector1ToolStripMenuItem.Text = "Vector";
@@ -157,6 +159,13 @@
             this.diferenciaSimetricav1v2ToolStripMenuItem.Text = "diferencia simetrica(v1,v2)";
             this.diferenciaSimetricav1v2ToolStripMenuItem.Click += new System.EventHandler(this.diferenciaSimetricav1v2ToolStripMenuItem_Click);
             // 
+            // eliminarRepetidosDejandoUnicosabToolStripMenuItem
+            // 
+            this.eliminarRepetidosDejandoUnicosabToolStripMenuItem.Name = "eliminarRepetidosDejandoUnicosabToolStripMenuItem";
+            this.eliminarRepetidosDejandoUnicosabToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.eliminarRepetidosDejandoUnicosabToolStripMenuItem.Text = "EliminarRepetidosDejandoUnicos(a,b)";
+            this.eliminarRepetidosDejandoUnicosabToolStripMenuItem.Click += new System.EventHandler(this.eliminarRepetidosDejandoUnicosabToolStripMenuItem_Click);
+            // 
             // vector1ToolStripMenuItem1
             // 
             this.vector1ToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -169,14 +178,14 @@
             // cargarToolStripMenuItem2
             // 
             this.cargarToolStripMenuItem2.Name = "cargarToolStripMenuItem2";
-            this.cargarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.cargarToolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
             this.cargarToolStripMenuItem2.Text = "cargarv1";
             this.cargarToolStripMenuItem2.Click += new System.EventHandler(this.cargarToolStripMenuItem2_Click);
             // 
             // decargarv2ToolStripMenuItem
             // 
             this.decargarv2ToolStripMenuItem.Name = "decargarv2ToolStripMenuItem";
-            this.decargarv2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.decargarv2ToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.decargarv2ToolStripMenuItem.Text = "decargarv2";
             this.decargarv2ToolStripMenuItem.Click += new System.EventHandler(this.decargarv2ToolStripMenuItem_Click);
             // 
@@ -243,12 +252,12 @@
             this.textBox5.Size = new System.Drawing.Size(573, 39);
             this.textBox5.TabIndex = 5;
             // 
-            // eliminarRepetidosDejandoUnicosabToolStripMenuItem
+            // ordenarExtremosabToolStripMenuItem
             // 
-            this.eliminarRepetidosDejandoUnicosabToolStripMenuItem.Name = "eliminarRepetidosDejandoUnicosabToolStripMenuItem";
-            this.eliminarRepetidosDejandoUnicosabToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
-            this.eliminarRepetidosDejandoUnicosabToolStripMenuItem.Text = "EliminarRepetidosDejandoUnicos(a,b)";
-            this.eliminarRepetidosDejandoUnicosabToolStripMenuItem.Click += new System.EventHandler(this.eliminarRepetidosDejandoUnicosabToolStripMenuItem_Click);
+            this.ordenarExtremosabToolStripMenuItem.Name = "ordenarExtremosabToolStripMenuItem";
+            this.ordenarExtremosabToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.ordenarExtremosabToolStripMenuItem.Text = "procedure: ordenarExtremos(a,b)";
+            this.ordenarExtremosabToolStripMenuItem.Click += new System.EventHandler(this.ordenarExtremosabToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -298,6 +307,7 @@
         private System.Windows.Forms.ToolStripMenuItem cantidadNumPrimDifereToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem diferenciaSimetricav1v2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarRepetidosDejandoUnicosabToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordenarExtremosabToolStripMenuItem;
     }
 }
 

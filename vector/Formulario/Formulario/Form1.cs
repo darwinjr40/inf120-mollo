@@ -23,11 +23,19 @@ namespace Formulario
 
         private void cargarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int dim = int.Parse(textBox1.Text);
-            int a = int.Parse(textBox2.Text);
-            int b = int.Parse(textBox3.Text);
-            this.vector.CargarRamdom(dim, a, b);
-            this.textBox4.Text = this.vector.Descargar();
+            try
+            {
+                int dim = int.Parse(textBox1.Text);
+                int a = int.Parse(textBox2.Text);
+                int b = int.Parse(textBox3.Text);
+                this.vector.CargarRamdom(dim, a, b);
+                this.textBox4.Text = this.vector.Descargar();
+            }
+            catch (Exception ex)
+            {
+                Interaction.MsgBox(ex.Message);
+            }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -58,9 +66,17 @@ namespace Formulario
 
         private void cargarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            int dim = int.Parse(textBox1.Text);
-            this.vector.Cargar(dim);
-            this.textBox4.Text = this.vector.Descargar();
+            try
+            {
+                int dim = int.Parse(textBox1.Text);
+                this.vector.Cargar(dim);
+                this.textBox4.Text = this.vector.Descargar();
+            }
+            catch (Exception ex)
+            {
+                Interaction.MsgBox(ex.Message);
+            }
+            
         }
 
         private void interseccionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -150,6 +166,20 @@ namespace Formulario
             int a = int.Parse(textBox2.Text);
             int b = int.Parse(textBox3.Text);
             this.vector.DeleteYDejarElemUnicos(a, b);
+        }
+
+        private void ordenarExtremosabToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int a = int.Parse(textBox2.Text);
+                int b = int.Parse(textBox3.Text);
+                vector.EndsSort(a, b);
+            }
+            catch (Exception ex)
+            {
+                Interaction.MsgBox(ex.Message);
+            }
         }
     }
 }

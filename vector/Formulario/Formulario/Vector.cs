@@ -80,12 +80,12 @@ namespace Formulario
         }
 
         //intercambia dos posiciones del vector
-        public void Inter(int a, int b)
-        {
-            int aux = v[a];
-            v[a] = v[b];
-            v[b] = aux;
-        }
+        //public void Inter(int a, int b)
+        //{
+        //    int aux = v[a];
+        //    v[a] = v[b];
+        //    v[b] = aux;
+        //}
 
         public void IntercalarMayMenInvertido(int a, int b)
         {
@@ -287,5 +287,47 @@ namespace Formulario
                          this.addElem(e);
             }
         }
+
+        //-----------------------------------------------------------
+        //modelo 2023-1
+        //retorna la posicion del elemento menor
+        public int GetPosElemMenor(int a, int b){
+            int pos = a;
+            int ele = this.v[a];
+            a++;
+            while (a <= b){
+                if (this.v[a] < ele){
+                    ele = this.v[a];
+                    pos = a;
+                }
+                a++;    
+            }
+            return pos;
+        }
+        //intercambia dos posiciones del vector
+        public void Inter(int a, int b)
+        {
+            int aux = v[a];
+            v[a] = v[b];
+            v[b] = aux;
+        }
+        //ordenar los extremos de manera ascendente
+        public void EndsSort(int a, int b){
+            bool sw = true;
+            int pos;
+            while (a < b) {
+                pos = this.GetPosElemMenor(a, b);
+                if (sw){                                     
+                    this.Inter(a, pos);                      
+                    a++;
+                } else {
+                    this.Inter(b, pos);                    
+                    b--;
+                }
+                sw = !sw;
+            }
+        }
+
+
     }
 }
