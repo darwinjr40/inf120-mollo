@@ -34,6 +34,7 @@ namespace WindowsFormsApplication1
             }
             this.m = this.matrices[0];
             //this.m = new Matriz();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -61,6 +62,26 @@ namespace WindowsFormsApplication1
         private void procedureAddColCantPrimosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.m.AddColCantPrimos();
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            //textBox1.Text = "filas";
+            //textBox1.ForeColor = SystemColors.GrayText;
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            //if (textBox1.Text == "filas")
+            //{
+            //    textBox1.Text = "";
+            //    textBox1.ForeColor = SystemColors.WindowText;
+            //}
+        }
+
+        private void procedureOrdFilCantPrimosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.m.OrdFilCantPrimos();
         }
     }
 }

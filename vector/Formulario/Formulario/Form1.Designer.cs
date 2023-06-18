@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.vector1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +42,7 @@
             this.cantidadNumPrimDifereToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diferenciaSimetricav1v2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarRepetidosDejandoUnicosabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenarExtremosabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vector1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.decargarv2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -52,7 +54,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.ordenarExtremosabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -166,6 +168,13 @@
             this.eliminarRepetidosDejandoUnicosabToolStripMenuItem.Text = "EliminarRepetidosDejandoUnicos(a,b)";
             this.eliminarRepetidosDejandoUnicosabToolStripMenuItem.Click += new System.EventHandler(this.eliminarRepetidosDejandoUnicosabToolStripMenuItem_Click);
             // 
+            // ordenarExtremosabToolStripMenuItem
+            // 
+            this.ordenarExtremosabToolStripMenuItem.Name = "ordenarExtremosabToolStripMenuItem";
+            this.ordenarExtremosabToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.ordenarExtremosabToolStripMenuItem.Text = "procedure: ordenarExtremos(a,b)";
+            this.ordenarExtremosabToolStripMenuItem.Click += new System.EventHandler(this.ordenarExtremosabToolStripMenuItem_Click);
+            // 
             // vector1ToolStripMenuItem1
             // 
             this.vector1ToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -178,14 +187,14 @@
             // cargarToolStripMenuItem2
             // 
             this.cargarToolStripMenuItem2.Name = "cargarToolStripMenuItem2";
-            this.cargarToolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
+            this.cargarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.cargarToolStripMenuItem2.Text = "cargarv1";
             this.cargarToolStripMenuItem2.Click += new System.EventHandler(this.cargarToolStripMenuItem2_Click);
             // 
             // decargarv2ToolStripMenuItem
             // 
             this.decargarv2ToolStripMenuItem.Name = "decargarv2ToolStripMenuItem";
-            this.decargarv2ToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.decargarv2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.decargarv2ToolStripMenuItem.Text = "decargarv2";
             this.decargarv2ToolStripMenuItem.Click += new System.EventHandler(this.decargarv2ToolStripMenuItem_Click);
             // 
@@ -201,14 +210,14 @@
             // cargarv2ToolStripMenuItem
             // 
             this.cargarv2ToolStripMenuItem.Name = "cargarv2ToolStripMenuItem";
-            this.cargarv2ToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.cargarv2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cargarv2ToolStripMenuItem.Text = "cargarv2";
             this.cargarv2ToolStripMenuItem.Click += new System.EventHandler(this.cargarv2ToolStripMenuItem_Click);
             // 
             // descargarv2ToolStripMenuItem
             // 
             this.descargarv2ToolStripMenuItem.Name = "descargarv2ToolStripMenuItem";
-            this.descargarv2ToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.descargarv2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.descargarv2ToolStripMenuItem.Text = "descargarv2";
             this.descargarv2ToolStripMenuItem.Click += new System.EventHandler(this.descargarv2ToolStripMenuItem_Click);
             // 
@@ -252,12 +261,10 @@
             this.textBox5.Size = new System.Drawing.Size(573, 39);
             this.textBox5.TabIndex = 5;
             // 
-            // ordenarExtremosabToolStripMenuItem
+            // contextMenuStrip1
             // 
-            this.ordenarExtremosabToolStripMenuItem.Name = "ordenarExtremosabToolStripMenuItem";
-            this.ordenarExtremosabToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
-            this.ordenarExtremosabToolStripMenuItem.Text = "procedure: ordenarExtremos(a,b)";
-            this.ordenarExtremosabToolStripMenuItem.Click += new System.EventHandler(this.ordenarExtremosabToolStripMenuItem_Click);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 26);
             // 
             // Form1
             // 
@@ -308,6 +315,7 @@
         private System.Windows.Forms.ToolStripMenuItem diferenciaSimetricav1v2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarRepetidosDejandoUnicosabToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordenarExtremosabToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 

@@ -50,7 +50,7 @@ namespace Numero
                 }
                 i--; // i = i - 1;
             }
-            return true;
+            return n != 1;
         }
 
         public void Invertir()

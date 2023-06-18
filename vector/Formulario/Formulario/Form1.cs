@@ -43,6 +43,7 @@ namespace Formulario
             this.vector = new Vector();
             this.vector1 = new Vector();
             this.vector2 = new Vector();
+            textBox2.ForeColor = SystemColors.WindowText;
         }
 
         private void descargarToolStripMenuItem_Click(object sender, EventArgs e)

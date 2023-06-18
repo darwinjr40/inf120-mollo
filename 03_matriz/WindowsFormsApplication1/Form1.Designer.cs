@@ -40,6 +40,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.matrizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procedureAddColCantPrimosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.procedureOrdFilCantPrimosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,35 +67,45 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBox1.Location = new System.Drawing.Point(205, 134);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 26);
+            this.textBox1.Size = new System.Drawing.Size(73, 26);
             this.textBox1.TabIndex = 2;
+            this.textBox1.Text = "filas";
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(300, 134);
+            this.textBox2.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.textBox2.Location = new System.Drawing.Point(293, 134);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(71, 26);
+            this.textBox2.Size = new System.Drawing.Size(83, 26);
             this.textBox2.TabIndex = 3;
+            this.textBox2.Text = "columnas";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(205, 166);
+            this.textBox3.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.textBox3.Location = new System.Drawing.Point(382, 134);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(76, 26);
             this.textBox3.TabIndex = 4;
+            this.textBox3.Text = "rangoA";
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(300, 166);
+            this.textBox4.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.textBox4.Location = new System.Drawing.Point(479, 134);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(76, 26);
             this.textBox4.TabIndex = 5;
+            this.textBox4.Text = "rangoB";
             // 
             // textBox5
             // 
@@ -122,7 +133,7 @@
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(553, 228);
+            this.textBox6.Location = new System.Drawing.Point(536, 228);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(484, 233);
@@ -141,7 +152,8 @@
             // matrizToolStripMenuItem
             // 
             this.matrizToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.procedureAddColCantPrimosToolStripMenuItem});
+            this.procedureAddColCantPrimosToolStripMenuItem,
+            this.procedureOrdFilCantPrimosToolStripMenuItem});
             this.matrizToolStripMenuItem.Name = "matrizToolStripMenuItem";
             this.matrizToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.matrizToolStripMenuItem.Text = "Matriz";
@@ -152,6 +164,13 @@
             this.procedureAddColCantPrimosToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.procedureAddColCantPrimosToolStripMenuItem.Text = "procedure: AddColCantPrimos";
             this.procedureAddColCantPrimosToolStripMenuItem.Click += new System.EventHandler(this.procedureAddColCantPrimosToolStripMenuItem_Click);
+            // 
+            // procedureOrdFilCantPrimosToolStripMenuItem
+            // 
+            this.procedureOrdFilCantPrimosToolStripMenuItem.Name = "procedureOrdFilCantPrimosToolStripMenuItem";
+            this.procedureOrdFilCantPrimosToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.procedureOrdFilCantPrimosToolStripMenuItem.Text = "procedure: OrdFilCantPrimos";
+            this.procedureOrdFilCantPrimosToolStripMenuItem.Click += new System.EventHandler(this.procedureOrdFilCantPrimosToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -193,6 +212,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem matrizToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem procedureAddColCantPrimosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem procedureOrdFilCantPrimosToolStripMenuItem;
     }
 }
 

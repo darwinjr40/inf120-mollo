@@ -68,5 +68,42 @@ namespace WindowsFormsApplication1
             }
             this.c++;
         }
+
+
+        public int GetCantPrimos(int fila){
+            int cant = 0;
+            Entero objEnt = new Entero();
+            for (int j = 1; j <= this.c; j++){
+                objEnt.cargar(this.m[fila, j]);
+                if (objEnt.VerifPrimo())
+                    cant++;
+            }
+            return cant;
+        }
+
+        public void inter(int f1,int c1, int f2,int c2)
+        {
+            int aux = m[f1, c1];
+            m[f1, c1] = m[f2, c2];
+            m[f2, c2] = aux;
+        }
+        public void InterFilas(int f1, int f2)
+        {
+            for (int j = 1; j <= this.c; j++)
+                this.inter(f1, j, f2, j);
+        }
+
+        public void OrdFilCantPrimos()
+        {
+            int a, b;
+            for (int f1 = 1; f1 <= this.f-1; f1++){
+              for (int f2 = f1+1; f2 <= this.f; f2++){
+                  a = this.GetCantPrimos(f1);
+                  b = this.GetCantPrimos(f2);
+                  if (a > b)
+                      this.InterFilas(f1, f2);
+              }
+            }
+        }
     }
 }
