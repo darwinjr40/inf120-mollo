@@ -83,5 +83,10 @@ namespace WindowsFormsApplication1
         {
             this.m.OrdFilCantPrimos();
         }
+
+        private void procedureaddColElemFrToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.m.AddElemFr();
+        }
     }
 }

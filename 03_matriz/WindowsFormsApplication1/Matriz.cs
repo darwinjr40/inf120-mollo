@@ -42,7 +42,8 @@ namespace WindowsFormsApplication1
             {
                 for (int j = 1; j <= this.c; j++)
                 {
-                    r = r + this.m[i, j] + "\x0009";
+                    //r = r + this.m[i, j] + "\x0009";
+                    r = r + this.m[i, j] + ", ";
                 }
                 r = r + "\x000d" + "\x000a";   
             }
@@ -104,6 +105,45 @@ namespace WindowsFormsApplication1
                       this.InterFilas(f1, f2);
               }
             }
+        }
+
+        public int frec(int i, int a, int b, int x)
+        {
+            int cant = 0;
+            for (int j = a; j <= b; j++)
+            {
+                if (this.m[i, j] == x)
+                    cant++;
+            }
+            return cant;
+        }
+
+        public void CargarEleFr(int i, ref int e, ref int fr)
+        {
+            e = 0;
+            fr = 0;
+            int a;
+            for (int j = 1; j <= this.c; j++)
+            {
+                a = this.frec(i, 1, this.c, m[i, j]);
+                if (a > fr)
+                {
+                    fr = a;
+                    e = m[i, j];
+                }
+            }
+        }
+
+        public void AddElemFr()
+        {
+            int e=0, fr=0;
+            for (int i = 1; i <= this.f; i++)
+            {
+                this.CargarEleFr(i, ref e, ref fr);
+                this.m[i, this.c + 1] = e;
+                this.m[i, this.c + 2] = fr;
+            }
+            this.c = this.c + 2;
         }
     }
 }
