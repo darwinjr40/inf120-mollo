@@ -42,6 +42,9 @@
             this.procedureAddColCantPrimosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procedureOrdFilCantPrimosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.procedureaddColElemFrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.procedureordColDescToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.procedureOrdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.procedureOrdsenozoidalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -155,7 +158,10 @@
             this.matrizToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.procedureAddColCantPrimosToolStripMenuItem,
             this.procedureOrdFilCantPrimosToolStripMenuItem,
-            this.procedureaddColElemFrToolStripMenuItem});
+            this.procedureaddColElemFrToolStripMenuItem,
+            this.procedureordColDescToolStripMenuItem,
+            this.procedureOrdToolStripMenuItem,
+            this.procedureOrdsenozoidalToolStripMenuItem});
             this.matrizToolStripMenuItem.Name = "matrizToolStripMenuItem";
             this.matrizToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.matrizToolStripMenuItem.Text = "Matriz";
@@ -180,6 +186,26 @@
             this.procedureaddColElemFrToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
             this.procedureaddColElemFrToolStripMenuItem.Text = "procedure:addColElemFr";
             this.procedureaddColElemFrToolStripMenuItem.Click += new System.EventHandler(this.procedureaddColElemFrToolStripMenuItem_Click);
+            // 
+            // procedureordColDescToolStripMenuItem
+            // 
+            this.procedureordColDescToolStripMenuItem.Name = "procedureordColDescToolStripMenuItem";
+            this.procedureordColDescToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.procedureordColDescToolStripMenuItem.Text = "procedure:ordColDesc";
+            this.procedureordColDescToolStripMenuItem.Click += new System.EventHandler(this.procedureordColDescToolStripMenuItem_Click);
+            // 
+            // procedureOrdToolStripMenuItem
+            // 
+            this.procedureOrdToolStripMenuItem.Name = "procedureOrdToolStripMenuItem";
+            this.procedureOrdToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.procedureOrdToolStripMenuItem.Text = "procedureOrd";
+            // 
+            // procedureOrdsenozoidalToolStripMenuItem
+            // 
+            this.procedureOrdsenozoidalToolStripMenuItem.Name = "procedureOrdsenozoidalToolStripMenuItem";
+            this.procedureOrdsenozoidalToolStripMenuItem.Size = new System.Drawing.Size(236, 22);
+            this.procedureOrdsenozoidalToolStripMenuItem.Text = "procedure:Ordsenozoidal()";
+            this.procedureOrdsenozoidalToolStripMenuItem.Click += new System.EventHandler(this.procedureOrdsenozoidalToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -223,6 +249,9 @@
         private System.Windows.Forms.ToolStripMenuItem procedureAddColCantPrimosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem procedureOrdFilCantPrimosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem procedureaddColElemFrToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem procedureordColDescToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem procedureOrdToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem procedureOrdsenozoidalToolStripMenuItem;
     }
 }
 

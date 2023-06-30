@@ -145,5 +145,61 @@ namespace WindowsFormsApplication1
             }
             this.c = this.c + 2;
         }
+
+
+        public void OrdInterCol(int j, int a, int b)
+        {
+            for (int i = a; i <= b-1; i++)
+            {
+                for (int ii = i+1; ii <= b; ii++)
+                {
+                    if (this.m[i, j] < this.m[ii, j])                    
+                        this.inter(i, j, ii, j);                    
+                } 
+            }
+        }
+        public void Ord2023_1A()
+        {
+            for (int j = 1; j <= this.c - 1; j++)
+                this.OrdInterCol(j, j + 1, c);
+        }
+
+
+        public void Ordsenozoidal()
+        {
+            bool sw = true;
+            int fi;
+            for (int j = 1; j <= this.c; j++)
+            {
+                if (sw)
+                {
+                    for (int i = this.f; i >= 1; i--)
+                    {
+                        for (int jj = j; jj <= this.c; jj++)
+                        {
+                            fi = (jj == j) ? (i) : (this.f);
+                            for (int ii = fi; ii >= 1; ii--)
+                                if (this.m[i, j] > this.m[ii, jj])
+                                    this.inter(i, j, ii, jj); 
+                        } 
+                    }
+                }
+                else
+                {
+                    for (int i = 1; i <= this.f; i++)
+                    {
+                        for (int jj = j; jj <= this.c; jj++)
+                        {
+                            fi = (jj == j) ? (i) : (1);
+                            for (int ii = fi; ii <= this.f; ii++)                            
+                                if (this.m[i, j] > this.m[ii, jj])
+                                    this.inter(i, j, ii, jj); 
+                            
+                        }
+                    }
+                }
+                sw = !sw;
+            }
+        }
     }
 }

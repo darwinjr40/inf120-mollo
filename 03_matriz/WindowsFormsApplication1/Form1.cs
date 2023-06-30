@@ -88,5 +88,15 @@ namespace WindowsFormsApplication1
         {
             this.m.AddElemFr();
         }
+
+        private void procedureordColDescToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.m.Ord2023_1A();
+        }
+
+        private void procedureOrdsenozoidalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.m.Ordsenozoidal();
+        }
     }
 }
