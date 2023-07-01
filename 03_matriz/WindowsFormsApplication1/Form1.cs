@@ -96,7 +96,8 @@ namespace WindowsFormsApplication1
 
         private void procedureOrdsenozoidalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.m.Ordsenozoidal();
+            //this.m.Ordsenozoidal();
+            this.m.examen2023();
         }
     }
 }

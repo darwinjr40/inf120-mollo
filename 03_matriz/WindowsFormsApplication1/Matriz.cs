@@ -201,5 +201,25 @@ namespace WindowsFormsApplication1
                 sw = !sw;
             }
         }
+
+        public void examen2023()
+        {
+            int co;
+            for (int i = 2; i <= this.f; i++)
+			{
+                for (int j =  this.c-i+2; j <= this.c; j++)
+                {
+                    for (int ii = i; ii <= this.f; ii++)
+                    {
+                       co = (ii == i) ? (j) : (this.c-ii+2);
+                       for (int jj = co; jj <= this.c; jj++)
+                       {
+                           if (this.m[i, j] > this.m[ii, jj])
+                                    this.inter(i, j, ii, jj); 
+                       }
+                    } 
+                }
+			}
+        }
     }
 }
