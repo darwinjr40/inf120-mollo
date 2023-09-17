@@ -25,3 +25,12 @@ D:\00_materia\auxiliar\inf120-mollo\numero\Numero\obj\Debug\Numero.csprojResolve
 D:\00_materia\auxiliar\inf120-mollo\numero\Numero\obj\Debug\Numero.Form1.resources
 D:\00_materia\auxiliar\inf120-mollo\numero\Numero\obj\Debug\Numero.Properties.Resources.resources
 D:\00_materia\auxiliar\inf120-mollo\numero\Numero\obj\Debug\Numero.csproj.GenerateResource.Cache
+G:\auxiliar\inf120\inf120-mollo\codigo\numero\Numero\bin\Debug\Numero.exe.config
+G:\auxiliar\inf120\inf120-mollo\codigo\numero\Numero\obj\Debug\Numero.exe
+G:\auxiliar\inf120\inf120-mollo\codigo\numero\Numero\obj\Debug\Numero.pdb
+G:\auxiliar\inf120\inf120-mollo\codigo\numero\Numero\bin\Debug\Numero.exe
+G:\auxiliar\inf120\inf120-mollo\codigo\numero\Numero\bin\Debug\Numero.pdb
+G:\auxiliar\inf120\inf120-mollo\codigo\numero\Numero\obj\Debug\Numero.csprojResolveAssemblyReference.cache
+G:\auxiliar\inf120\inf120-mollo\codigo\numero\Numero\obj\Debug\Numero.Form1.resources
+G:\auxiliar\inf120\inf120-mollo\codigo\numero\Numero\obj\Debug\Numero.Properties.Resources.resources
+G:\auxiliar\inf120\inf120-mollo\codigo\numero\Numero\obj\Debug\Numero.csproj.GenerateResource.Cache

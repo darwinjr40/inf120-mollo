@@ -203,5 +203,26 @@ namespace Numero
             }
             return (c == this.n);
         }
+
+        public bool EsEscalera()
+        {
+            this.OrdAsc();
+            int na = this.n;
+            int d = 0;
+            bool b = true;
+            int dr = na % 10;
+            na = na / 10;
+            while ((na > 0) && (b==true))
+            {
+                d = na % 10;
+                na = na / 10;
+                dr = dr - 1;
+                if (d != dr )
+                {
+                    b = false;
+                }
+            }
+            return b;
+        }
     }
 }

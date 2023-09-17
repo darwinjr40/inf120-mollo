@@ -7,12 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace Numero
 {
     public partial class Form1 : Form
     {
         Entero obj, objN2;
+        string foto1 = "/foto.png";
+        string foto2 = "/foto.png";
+        string foto3 = "/foto.png";
+        string foto4 = "/foto.png";
+        string foto5 = "/foto.png";
         public Form1()
         {
             InitializeComponent();
@@ -83,6 +89,39 @@ namespace Numero
         {
 
             textBox2.Text = this.obj.EsFibo().ToString();
+        }
+
+        private void cargarRandToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+
+            int rnd = random.Next(1, 5);
+            string foto;
+            if (rnd == 1)
+            {
+                foto = foto1;
+            }
+            else if (rnd == 2)
+            {
+                foto = foto2;
+            }if (rnd == 3)
+            {
+                foto = foto3;
+            } if (rnd == 4)
+            {
+                foto = foto4;
+            } if (rnd == 5)
+            {
+                foto = foto5;
+            }
+            obj.cargar(rnd);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+            Interaction.MsgBox(obj.EsEscalera().ToString());
+            //Interaction.MsgBox("es la grande (Los 5 dados iguales ) \n es poker (4 dados iguales y el 1 dado diferente) \n es full (2 dados iguales y 3 dados iguales) \n es escalera () \n es trica (3 dados iguales y los otros 2 diferentes) \n Verificar par (2 dados iguales y los otros diferentes) \n ninguna de las anteriores");
         }
     }
 }
