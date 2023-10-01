@@ -7,3 +7,12 @@ G:\auxiliar\inf120-mollo\03_matriz\WindowsFormsApplication1\bin\Debug\WindowsFor
 G:\auxiliar\inf120-mollo\03_matriz\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
 G:\auxiliar\inf120-mollo\03_matriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 G:\auxiliar\inf120-mollo\03_matriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+G:\auxiliar\inf120\inf120-mollo\codigo\03_matriz\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+G:\auxiliar\inf120\inf120-mollo\codigo\03_matriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+G:\auxiliar\inf120\inf120-mollo\codigo\03_matriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+G:\auxiliar\inf120\inf120-mollo\codigo\03_matriz\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+G:\auxiliar\inf120\inf120-mollo\codigo\03_matriz\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+G:\auxiliar\inf120\inf120-mollo\codigo\03_matriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+G:\auxiliar\inf120\inf120-mollo\codigo\03_matriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+G:\auxiliar\inf120\inf120-mollo\codigo\03_matriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+G:\auxiliar\inf120\inf120-mollo\codigo\03_matriz\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache

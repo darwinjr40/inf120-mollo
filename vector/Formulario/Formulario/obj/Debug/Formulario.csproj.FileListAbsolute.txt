@@ -34,3 +34,12 @@ D:\00_materia\auxiliar\inf120-mollo\vector\Formulario\Formulario\obj\Debug\Formu
 D:\00_materia\auxiliar\inf120-mollo\vector\Formulario\Formulario\obj\Debug\Formulario.Form1.resources
 D:\00_materia\auxiliar\inf120-mollo\vector\Formulario\Formulario\obj\Debug\Formulario.Properties.Resources.resources
 D:\00_materia\auxiliar\inf120-mollo\vector\Formulario\Formulario\obj\Debug\Formulario.csproj.GenerateResource.Cache
+G:\auxiliar\inf120\inf120-mollo\codigo\vector\Formulario\Formulario\bin\Debug\Formulario.exe.config
+G:\auxiliar\inf120\inf120-mollo\codigo\vector\Formulario\Formulario\obj\Debug\Formulario.exe
+G:\auxiliar\inf120\inf120-mollo\codigo\vector\Formulario\Formulario\obj\Debug\Formulario.pdb
+G:\auxiliar\inf120\inf120-mollo\codigo\vector\Formulario\Formulario\bin\Debug\Formulario.exe
+G:\auxiliar\inf120\inf120-mollo\codigo\vector\Formulario\Formulario\bin\Debug\Formulario.pdb
+G:\auxiliar\inf120\inf120-mollo\codigo\vector\Formulario\Formulario\obj\Debug\Formulario.csprojResolveAssemblyReference.cache
+G:\auxiliar\inf120\inf120-mollo\codigo\vector\Formulario\Formulario\obj\Debug\Formulario.Form1.resources
+G:\auxiliar\inf120\inf120-mollo\codigo\vector\Formulario\Formulario\obj\Debug\Formulario.Properties.Resources.resources
+G:\auxiliar\inf120\inf120-mollo\codigo\vector\Formulario\Formulario\obj\Debug\Formulario.csproj.GenerateResource.Cache

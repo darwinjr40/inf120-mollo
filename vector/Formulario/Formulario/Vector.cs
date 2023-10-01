@@ -263,13 +263,12 @@ namespace Formulario
             for (int i = 1; i <= v1.n; i++)
             {
                 a = v1.v[i];
-                if (!v2.Pertenece(a))
-                    //if (!v2.Pertenece(a) && (!this.Pertenece(a)))
-                    this.addElem(a);    
+                if (!v2.Pertenece(a) && v1.Pertenece(v1.v[i]))                    
+                    this.addElem(a);
+                //if (!v2.Pertenece(a) && (!this.Pertenece(a)))
             }
             for (int i = 1; i <= v2.n; i++)
-                if (!v1.Pertenece(v2.v[i]))
-                    //if (!v1.Pertenece(v2.v[i]) && (!this.Pertenece(v2.v[i])))
+                if ( (! v1.Pertenece(v2.v[i])) && (!this.Pertenece(v2.v[i])))
                     this.addElem(v2.v[i]);
         }
         //-----------------------------------------------------------
