@@ -34,7 +34,7 @@ namespace Formulario
             Random rand = new Random();
             for (int i = 1; i <= n; i++)
             {
-                v[i] = rand.Next(a, b + 1); ;   
+                v[i] = rand.Next(a, b + 1);
             }
         }
 
@@ -291,7 +291,7 @@ namespace Formulario
         //modelo 2023-1
         //retorna la posicion del elemento menor
         public int GetPosElemMenor(int a, int b){
-            int pos = a;            
+            int pos = a;
             a++;
             while (a <= b){
                 if (this.v[a] < this.v[pos])                   
@@ -323,7 +323,30 @@ namespace Formulario
                 sw = !sw;
             }
         }
+        //------------------------------
+        bool Existe(int a, int b, int x)
+        {
+            bool sw = false;
+            while( (a <= b) && (!sw)){
+                if (v[a] == x) sw = true;                
+                a++;
+            }
+            return sw;
+        }
 
+        public void CargarRamdomNoRep(int cant, int a, int b)
+        {
+            n = 0;
+            Random rand = new Random();
+            while(n <= cant){
+                int x = rand.Next(a+1, b + 1);
+                if (!this.Existe(1, n, x)){
+                    n++;
+                    v[n] = x;                    
+                }                                  
+            }
+        }
 
+        //------------------------------
     }
 }

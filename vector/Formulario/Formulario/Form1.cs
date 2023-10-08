@@ -182,5 +182,20 @@ namespace Formulario
                 Interaction.MsgBox(ex.Message);
             }
         }
+
+        private void cargarrndnoRepToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+             try
+            {
+                int dim = int.Parse(textBox1.Text);
+                int a = int.Parse(textBox2.Text);
+                int b = int.Parse(textBox3.Text);
+                this.vector.CargarRamdomNoRep(dim, a, b);                
+            }
+            catch (Exception ex)
+            {
+                Interaction.MsgBox(ex.Message);
+            }            
+        }
     }
 }
