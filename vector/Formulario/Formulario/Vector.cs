@@ -347,6 +347,47 @@ namespace Formulario
             }
         }
 
+        //2023-1R-#1------------------------------
+        public void LoadFiboAndFrec(int a, int b, Vector e, Vector f)
+        {
+            Entero num = new Entero();
+            e.n = 0;
+            f.n = 0;
+            while (a <= b){
+                num.cargar( v[a] );
+                if ( num.EsFibo() &&  !e.Pertenece(v[a]) ) {
+                    e.addOrdAsc(v[a], f, this.GetFrec(a, b, v[a]));                    
+                }
+                a++;
+            }
+        }
+
+        public void addOrdAsc(int x)
+        {
+            int m = n;
+            while (m >= 1 && v[m] > x )
+            {
+                v[m + 1] = v[m];
+                m = m - 1;
+            }
+            v[m + 1] = x;
+            n = n + 1;
+        }
+
+        public void addOrdAsc(int x, Vector f, int fr)
+        {
+            int m = n;
+            while (m >= 1 && v[m] > x)
+            {
+                v[m + 1] = v[m];
+                f.v[m + 1] = f.v[m];
+                m = m - 1;
+            }
+            v[m + 1] = x;
+            n = n + 1;
+            f.v[m + 1] = fr;
+            f.n++;
+        }
         //------------------------------
     }
 }

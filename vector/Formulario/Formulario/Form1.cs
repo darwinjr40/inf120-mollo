@@ -197,5 +197,20 @@ namespace Formulario
                 Interaction.MsgBox(ex.Message);
             }            
         }
+
+        private void cargarfiboYFrecToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {                
+                int a = int.Parse(textBox2.Text);
+                int b = int.Parse(textBox3.Text);
+                vector.LoadFiboAndFrec(a, b, vector1, vector2);
+            }
+            catch (Exception ex)
+            {
+                Interaction.MsgBox(ex.Message);
+            } 
+            
+        }
     }
 }
