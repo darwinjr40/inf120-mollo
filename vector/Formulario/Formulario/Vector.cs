@@ -388,6 +388,36 @@ namespace Formulario
             f.v[m + 1] = fr;
             f.n++;
         }
+        //Practico 2023-2 ------------------------------
+        public double GetMediaPos(int m)
+        {
+            int sum = 0;
+            int cant = 0;
+            for (int i = 1; i <= this.n; i++)
+            {
+                if ((i % m) == 0)
+                {
+                    sum += v[i];
+                    cant++;
+                }
+            }
+
+            return (cant == 0) ? 0 : (sum / cant);
+        }   
+
+        public void Invertir(int a, int b){
+            while (a < b)
+            {
+                this.Inter(a, b);
+                a++;
+                b--;
+            }
+        }
+
+        public void Invertir()
+        {
+            this.Invertir(1, n);
+        }
         //------------------------------
     }
 }

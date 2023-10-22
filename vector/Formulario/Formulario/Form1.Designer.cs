@@ -44,6 +44,7 @@
             this.eliminarRepetidosDejandoUnicosabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenarExtremosabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarrndnoRepToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargarfiboYFrecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vector1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.decargarv2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,7 +57,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cargarfiboYFrecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.practico20232ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,7 +91,8 @@
             this.eliminarRepetidosDejandoUnicosabToolStripMenuItem,
             this.ordenarExtremosabToolStripMenuItem,
             this.cargarrndnoRepToolStripMenuItem,
-            this.cargarfiboYFrecToolStripMenuItem});
+            this.cargarfiboYFrecToolStripMenuItem,
+            this.practico20232ToolStripMenuItem});
             this.vector1ToolStripMenuItem.Name = "vector1ToolStripMenuItem";
             this.vector1ToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.vector1ToolStripMenuItem.Text = "Vector";
@@ -186,6 +188,13 @@
             this.cargarrndnoRepToolStripMenuItem.Text = "cargar-rnd-noRep";
             this.cargarrndnoRepToolStripMenuItem.Click += new System.EventHandler(this.cargarrndnoRepToolStripMenuItem_Click);
             // 
+            // cargarfiboYFrecToolStripMenuItem
+            // 
+            this.cargarfiboYFrecToolStripMenuItem.Name = "cargarfiboYFrecToolStripMenuItem";
+            this.cargarfiboYFrecToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.cargarfiboYFrecToolStripMenuItem.Text = "cargar-fibo y frec";
+            this.cargarfiboYFrecToolStripMenuItem.Click += new System.EventHandler(this.cargarfiboYFrecToolStripMenuItem_Click);
+            // 
             // vector1ToolStripMenuItem1
             // 
             this.vector1ToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -278,12 +287,12 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // cargarfiboYFrecToolStripMenuItem
+            // practico20232ToolStripMenuItem
             // 
-            this.cargarfiboYFrecToolStripMenuItem.Name = "cargarfiboYFrecToolStripMenuItem";
-            this.cargarfiboYFrecToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
-            this.cargarfiboYFrecToolStripMenuItem.Text = "cargar-fibo y frec";
-            this.cargarfiboYFrecToolStripMenuItem.Click += new System.EventHandler(this.cargarfiboYFrecToolStripMenuItem_Click);
+            this.practico20232ToolStripMenuItem.Name = "practico20232ToolStripMenuItem";
+            this.practico20232ToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.practico20232ToolStripMenuItem.Text = "practico-2023-2";
+            this.practico20232ToolStripMenuItem.Click += new System.EventHandler(this.practico20232ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -337,6 +346,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cargarrndnoRepToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cargarfiboYFrecToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem practico20232ToolStripMenuItem;
     }
 }
 

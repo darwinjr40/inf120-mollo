@@ -212,5 +212,24 @@ namespace Formulario
             } 
             
         }
+
+        private void practico20232ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //int mult = int.Parse(Interaction.InputBox("", "", ""));
+            //double media = this.vector.GetMediaPos(mult);
+            //textBox5.Text = media.ToString();
+            try
+            {
+                //int a = int.Parse(textBox2.Text);
+                //int b = int.Parse(textBox3.Text);
+                //this.vector.Invertir(a, b);
+                this.vector.Invertir();
+            }
+            catch (Exception ex)
+            {
+                Interaction.MsgBox(ex.Message);
+            } 
+            
+        }
     }
 }
