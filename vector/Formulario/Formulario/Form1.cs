@@ -223,7 +223,8 @@ namespace Formulario
                 //int a = int.Parse(textBox2.Text);
                 //int b = int.Parse(textBox3.Text);
                 //this.vector.Invertir(a, b);
-                this.vector.Invertir();
+                //this.vector.Invertir();
+                this.vector.SegCapiAndNotCapi();
             }
             catch (Exception ex)
             {

@@ -419,5 +419,31 @@ namespace Formulario
             this.Invertir(1, n);
         }
         //------------------------------
+        public void SegCapiAndNotCapi(int a, int b)
+        {
+            Entero na = new Entero();
+            Entero nb = new Entero();
+            for (int i = 1; i <= b-1; i++)
+            {
+                for (int j = i+1; j <= b; j++)
+                {
+                    na.cargar(v[i]);
+                    nb.cargar(v[j]);
+                    if (( ! na.EsCapicua() && nb.EsCapicua())
+                        || (na.EsCapicua() && nb.EsCapicua() && v[i] > v[j])
+                        || (!na.EsCapicua() && !nb.EsCapicua() && v[i] < v[j])
+                        )
+                    {
+                        this.Inter(i, j); 
+                    }
+                }  
+            }
+        }
+
+        public void SegCapiAndNotCapi()
+        {
+            this.SegCapiAndNotCapi(1, this.n);
+        }
+        //------------------------------
     }
 }
