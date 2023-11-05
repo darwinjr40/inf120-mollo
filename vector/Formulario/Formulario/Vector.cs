@@ -78,7 +78,33 @@ namespace Formulario
                 this.addElem(x);   
             }
         }
+        
 
+        //Encontrar el elemento menos repetido
+        public int BuscElemMenFr(int a, int b)
+        {
+            int c, e;
+            int fr = 0;
+            int r = v[a];
+            while (a<=b && v[a] == r){
+                fr++;
+                a++;  
+            }
+            while (a<=b){
+                c = 0;
+                e = v[a];
+                while (a <= b && v[a] == e)
+                {
+                    c++;
+                    a++;
+                }
+                if (c < fr){
+                    fr = c;
+                    r = e;
+                }
+            }
+            return r;
+        }
         //intercambia dos posiciones del vector
         //public void Inter(int a, int b)
         //{
@@ -86,7 +112,26 @@ namespace Formulario
         //    v[a] = v[b];
         //    v[b] = aux;
         //}
+        public void add(int e, int p)
+        {
+            n++;
+            int i = n;
+            while (i >= p+1)
+            {
+                v[i]=v[i-1];
+                i--;
+            }
+            v[p] = e;
+        }
 
+        public void add(Vector y, int p)
+        {
+            for (int i = 1; i <= y.n; i++)
+            {
+                this.add(y.v[i], p);
+                p++;
+            }
+        }
         public void IntercalarMayMenInvertido(int a, int b)
         {
             bool sw = true;

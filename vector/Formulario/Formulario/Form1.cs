@@ -220,11 +220,15 @@ namespace Formulario
             //textBox5.Text = media.ToString();
             try
             {
-                //int a = int.Parse(textBox2.Text);
-                //int b = int.Parse(textBox3.Text);
+                int a = int.Parse(textBox2.Text);
+                int b = int.Parse(textBox3.Text);
                 //this.vector.Invertir(a, b);
                 //this.vector.Invertir();
-                this.vector.SegCapiAndNotCapi();
+                //this.vector.SegCapiAndNotCapi();
+                //int res = this.vector.BuscElemMenFr(a, b);
+                //Interaction.MsgBox(res.ToString());
+                //this.vector.add(a, b);
+                this.vector.add(this.vector1, a);
             }
             catch (Exception ex)
             {
