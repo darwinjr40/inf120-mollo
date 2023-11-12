@@ -228,7 +228,15 @@ namespace Formulario
                 //int res = this.vector.BuscElemMenFr(a, b);
                 //Interaction.MsgBox(res.ToString());
                 //this.vector.add(a, b);
-                this.vector.add(this.vector1, a);
+                //this.vector.add(this.vector1, a);
+
+                //DeletePosMult
+                //int cantElem = vector.GetCantElemDif(a, b);
+                //textBox5.Text = "Diferentes: " + cantElem.ToString();
+
+                //DeletePosMult
+                int m = int.Parse(Interaction.InputBox("", "ingrese valor para m:", ""));
+                vector.DeletePosMult(1, vector.GetN(), m);
             }
             catch (Exception ex)
             {

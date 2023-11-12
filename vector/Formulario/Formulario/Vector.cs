@@ -19,6 +19,10 @@ namespace Formulario
             v = new int[100];
         }
         //metodos
+        public int GetN()
+        {
+            return n;
+        }
         public void Cargar(int dim)
         {
             n = dim;
@@ -277,7 +281,21 @@ namespace Formulario
         }
 
         //-----------------------------------------------------------
-
+        public int GetCantElemDif(int a, int b)
+        {
+            int p = a;
+            int c = 0;
+            while (a <= b)
+            {
+                if (!Existe(p, a - 1, v[a]))
+                {
+                    c = c + 1;
+                }
+                a++;
+            }
+            return c;
+        }
+        //-----------------------------------------------------------
         public int GetCantNumPrimosUnicos(int a, int b)
         {
             int i = a;
@@ -332,6 +350,16 @@ namespace Formulario
             }
         }
 
+        //------------------------------------------------
+        public void DeletePosMult(int a, int b, int m)
+        {
+            n = 0;
+            while (a <= b)
+            {
+                if ((a % m) != 0) this.addElem(v[a]);
+                a++;
+            }
+        }
         //-----------------------------------------------------------
         //modelo 2023-1
         //retorna la posicion del elemento menor
@@ -490,5 +518,6 @@ namespace Formulario
             this.SegCapiAndNotCapi(1, this.n);
         }
         //------------------------------
+
     }
 }
