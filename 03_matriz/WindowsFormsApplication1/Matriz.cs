@@ -42,8 +42,7 @@ namespace WindowsFormsApplication1
             {
                 for (int j = 1; j <= this.c; j++)
                 {
-                    //r = r + this.m[i, j] + "\x0009";
-                    r = r + this.m[i, j] + ", ";
+                    r = r + this.m[i, j] + "\x0009";                    
                 }
                 r = r + "\x000d" + "\x000a";   
             }
@@ -221,5 +220,48 @@ namespace WindowsFormsApplication1
                 }
 			}
         }
+
+        public void examen01()
+        {
+            int x = 0;
+            for (int j = 1; j <= this.c; j++)
+            {
+                for (int i = this.f; i >= this.f-j+1; i--)
+                {
+                    for (int jj = j; jj <= this.c; jj++)
+                    {
+                        x = (j == jj) ? i : f;
+                        for (int ii = x; ii >= this.f - jj + 1; ii--)
+                        {
+                            if ((frec1(m[i, j]) > frec1(m[ii, jj])) 
+                                || (frec1(m[i, j]) == frec1(m[ii, jj]) && m[i, j] > m[ii, jj]))
+                            {
+                                this.inter(i, j, ii, jj);    
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+        public int frec1(int x)
+        {
+            int f = 0;
+            for (int j = 1; j <= this.c; j++)
+            {
+                for (int i = this.f; i >= this.f - j + 1; i--)
+                {
+                    if (m[i,j] == x)
+                    {
+                        f++;
+                    }
+                }
+            }
+            return f;
+        }
     }
+
+
+
 }

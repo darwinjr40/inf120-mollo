@@ -20,11 +20,6 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             this.matrices = new Matriz[this.cantidad];
@@ -33,8 +28,9 @@ namespace WindowsFormsApplication1
                 this.matrices[i] = new Matriz(); 
             }
             this.m = this.matrices[0];
-            //this.m = new Matriz();
-            
+            this.m.CargarRnd(5, 5, 1, 10);
+            textBox5.Text = this.m.Descargar();
+            textBox1.Focus();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,6 +41,7 @@ namespace WindowsFormsApplication1
                 int.Parse(textBox3.Text),
                 int.Parse(textBox4.Text)
             );
+            textBox5.Text = this.m.Descargar();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -59,45 +56,51 @@ namespace WindowsFormsApplication1
             textBox5.Text = this.m.Descargar();
         }
 
-        private void procedureAddColCantPrimosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.m.AddColCantPrimos();
-        }
 
-        private void textBox1_Leave(object sender, EventArgs e)
-        {
-            //textBox1.Text = "filas";
-            //textBox1.ForeColor = SystemColors.GrayText;
-        }
 
         private void textBox1_Enter(object sender, EventArgs e)
         {
-            //if (textBox1.Text == "filas")
-            //{
-            //    textBox1.Text = "";
-            //    textBox1.ForeColor = SystemColors.WindowText;
-            //}
+            ((TextBox)sender).Text = "";            
         }
 
         private void procedureOrdFilCantPrimosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.m.OrdFilCantPrimos();
+            
         }
 
         private void procedureaddColElemFrToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.m.AddElemFr();
+        {            
         }
 
         private void procedureordColDescToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.m.Ord2023_1A();
+            
         }
 
         private void procedureOrdsenozoidalToolStripMenuItem_Click(object sender, EventArgs e)
+        {            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
+            //this.m.AddColCantPrimos();
+            //this.m.OrdFilCantPrimos();
+            //this.m.AddElemFr();
+            //this.m.Ord2023_1A();
+            //this.m.examen2023();
             //this.m.Ordsenozoidal();
-            this.m.examen2023();
+            this.m.examen01();
+        }
+
+        private void procedureOrdToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void onClick(object sender, EventArgs e)
+        {
+            //TextBox textBox = (TextBox)sender;
+            //textBox.Text = string.Empty;
         }
     }
 }
