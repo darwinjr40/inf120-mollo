@@ -89,7 +89,8 @@ namespace WindowsFormsApplication1
             //this.m.Ord2023_1A();
             //this.m.examen2023();
             //this.m.Ordsenozoidal();
-            this.m.examen01();
+            //this.m.examen01();
+            this.m.examen02();
         }
 
         private void procedureOrdToolStripMenuItem_Click(object sender, EventArgs e)

@@ -224,21 +224,20 @@ namespace WindowsFormsApplication1
         public void examen01()
         {
             int x = 0;
-            for (int j = 1; j <= this.c; j++)
+            int a, b;
+            for (int j = 2; j <= this.c; j++)
             {
-                for (int i = this.f; i >= this.f-j+1; i--)
+                for (int i = this.f; i >=this.f-j+2 ; i--)
                 {
                     for (int jj = j; jj <= this.c; jj++)
                     {
-                        x = (j == jj) ? i : f;
-                        for (int ii = x; ii >= this.f - jj + 1; ii--)
+                        x = (jj == j) ? i : this.f;
+                        for (int ii = x; ii >= this.f - jj + 2; ii--)
                         {
-                            if ((frec1(m[i, j]) > frec1(m[ii, jj])) 
-                                || (frec1(m[i, j]) == frec1(m[ii, jj]) && m[i, j] > m[ii, jj]))
-                            {
-                                this.inter(i, j, ii, jj);    
-                            }
-                            
+                            a = m[i, j];
+                            b = m[ii, jj];
+                            if ((frec1(a) > frec1(b)) || (frec1(a)==frec1(b) && (a>b)))
+                                inter(i, j, ii, jj);                            
                         }
                     }
                 }
@@ -248,17 +247,37 @@ namespace WindowsFormsApplication1
         public int frec1(int x)
         {
             int f = 0;
-            for (int j = 1; j <= this.c; j++)
+            for (int j = 2; j <= this.c; j++)
             {
-                for (int i = this.f; i >= this.f - j + 1; i--)
-                {
-                    if (m[i,j] == x)
-                    {
-                        f++;
-                    }
+                for (int i = this.f; i >= this.f - j + 2; i--)
+                {                    
+                    if (m[i, j] == x) f++;
+                    
                 }
             }
             return f;
+        }
+
+        public void examen02()
+        {
+            int x;
+            for (int i = 2; i <= this.f; i++)
+            {
+                for (int j = this.c-i+2; j <= this.c; j++)
+                {
+                    for (int ii = i; ii <= this.f; ii++)
+                    { 
+                        x = (i==ii)? j : this.c-ii+2;
+                        for (int jj = x; jj <= this.c; jj++)
+                        { 
+                            if(m[i,j] > m[ii,jj]){
+                                inter(i, j, ii, jj);  
+                            }
+                                
+                        }
+                    }
+                }
+            }
         }
     }
 
