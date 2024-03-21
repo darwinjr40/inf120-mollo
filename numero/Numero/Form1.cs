@@ -123,5 +123,13 @@ namespace Numero
             Interaction.MsgBox(obj.EsEscalera().ToString());
             //Interaction.MsgBox("es la grande (Los 5 dados iguales ) \n es poker (4 dados iguales y el 1 dado diferente) \n es full (2 dados iguales y 3 dados iguales) \n es escalera () \n es trica (3 dados iguales y los otros 2 diferentes) \n Verificar par (2 dados iguales y los otros diferentes) \n ninguna de las anteriores");
         }
+
+        private void verificarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Interaction.MsgBox(
+            this.obj.VerifPot2()    
+                );
+            textBox2.Text = this.obj.VerifPot2().ToString();
+        }
     }
 }

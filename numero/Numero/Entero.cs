@@ -53,6 +53,15 @@ namespace Numero
             return true;
         }
 
+        public bool VerifPot2()
+        {
+            int c = 1;
+            while (c < n)
+            {
+                c = c * 2;
+            }            
+            return c == this.n;
+        }
         public void Invertir()
         {
             int d,
