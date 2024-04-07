@@ -518,6 +518,35 @@ namespace Formulario
             this.SegCapiAndNotCapi(1, this.n);
         }
         //------------------------------
+        public void IntercalarMayorDescAndMenorAsc(int a, int b)
+        {
+            bool sw = true;
+            for (int i = a; i <= (b-1); i++)
+            {
+                for (int j = i+1; j <= b; j++)
+                {
+                    if (sw==true)
+                    {
+                        if (v[j]>v[i])
+                        {
+                            int aux = v[i];
+                            v[i] = v[j];
+                            v[j] = aux;
+                        }
+                    }
+                    else
+                    {
+                        if (v[j] < v[i])
+                        {
+                            int aux = v[i];
+                            v[i] = v[j];
+                            v[j] = aux;
+                        }
+                    }
+                }
+                sw = !sw;
+            } 
+        }
 
     }
 }

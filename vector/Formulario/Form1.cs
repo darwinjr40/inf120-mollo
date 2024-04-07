@@ -244,5 +244,12 @@ namespace Formulario
             } 
             
         }
+
+        private void intercalarMayorDescAndMenorAscabToolStripMenuItem_Click(object sender, EventArgs e)
+        {            
+                int a = int.Parse(textBox2.Text);
+                int b = int.Parse(textBox3.Text);
+                vector.IntercalarMayorDescAndMenorAsc(a, b);            
+        }
     }
 }

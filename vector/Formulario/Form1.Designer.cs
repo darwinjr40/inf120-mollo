@@ -45,6 +45,7 @@
             this.ordenarExtremosabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarrndnoRepToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarfiboYFrecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.practico20232ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vector1ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cargarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.decargarv2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,7 +58,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.practico20232ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.intercalarMayorDescAndMenorAscabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,7 +93,8 @@
             this.ordenarExtremosabToolStripMenuItem,
             this.cargarrndnoRepToolStripMenuItem,
             this.cargarfiboYFrecToolStripMenuItem,
-            this.practico20232ToolStripMenuItem});
+            this.practico20232ToolStripMenuItem,
+            this.intercalarMayorDescAndMenorAscabToolStripMenuItem});
             this.vector1ToolStripMenuItem.Name = "vector1ToolStripMenuItem";
             this.vector1ToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.vector1ToolStripMenuItem.Text = "Vector";
@@ -195,6 +197,13 @@
             this.cargarfiboYFrecToolStripMenuItem.Text = "cargar-fibo y frec";
             this.cargarfiboYFrecToolStripMenuItem.Click += new System.EventHandler(this.cargarfiboYFrecToolStripMenuItem_Click);
             // 
+            // practico20232ToolStripMenuItem
+            // 
+            this.practico20232ToolStripMenuItem.Name = "practico20232ToolStripMenuItem";
+            this.practico20232ToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
+            this.practico20232ToolStripMenuItem.Text = "practico-2023-2";
+            this.practico20232ToolStripMenuItem.Click += new System.EventHandler(this.practico20232ToolStripMenuItem_Click);
+            // 
             // vector1ToolStripMenuItem1
             // 
             this.vector1ToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -207,14 +216,14 @@
             // cargarToolStripMenuItem2
             // 
             this.cargarToolStripMenuItem2.Name = "cargarToolStripMenuItem2";
-            this.cargarToolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
+            this.cargarToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
             this.cargarToolStripMenuItem2.Text = "cargarv1";
             this.cargarToolStripMenuItem2.Click += new System.EventHandler(this.cargarToolStripMenuItem2_Click);
             // 
             // decargarv2ToolStripMenuItem
             // 
             this.decargarv2ToolStripMenuItem.Name = "decargarv2ToolStripMenuItem";
-            this.decargarv2ToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.decargarv2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.decargarv2ToolStripMenuItem.Text = "decargarv2";
             this.decargarv2ToolStripMenuItem.Click += new System.EventHandler(this.decargarv2ToolStripMenuItem_Click);
             // 
@@ -230,14 +239,14 @@
             // cargarv2ToolStripMenuItem
             // 
             this.cargarv2ToolStripMenuItem.Name = "cargarv2ToolStripMenuItem";
-            this.cargarv2ToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.cargarv2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.cargarv2ToolStripMenuItem.Text = "cargarv2";
             this.cargarv2ToolStripMenuItem.Click += new System.EventHandler(this.cargarv2ToolStripMenuItem_Click);
             // 
             // descargarv2ToolStripMenuItem
             // 
             this.descargarv2ToolStripMenuItem.Name = "descargarv2ToolStripMenuItem";
-            this.descargarv2ToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
+            this.descargarv2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.descargarv2ToolStripMenuItem.Text = "descargarv2";
             this.descargarv2ToolStripMenuItem.Click += new System.EventHandler(this.descargarv2ToolStripMenuItem_Click);
             // 
@@ -287,12 +296,12 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // practico20232ToolStripMenuItem
+            // intercalarMayorDescAndMenorAscabToolStripMenuItem
             // 
-            this.practico20232ToolStripMenuItem.Name = "practico20232ToolStripMenuItem";
-            this.practico20232ToolStripMenuItem.Size = new System.Drawing.Size(273, 22);
-            this.practico20232ToolStripMenuItem.Text = "practico-2023-2";
-            this.practico20232ToolStripMenuItem.Click += new System.EventHandler(this.practico20232ToolStripMenuItem_Click);
+            this.intercalarMayorDescAndMenorAscabToolStripMenuItem.Name = "intercalarMayorDescAndMenorAscabToolStripMenuItem";
+            this.intercalarMayorDescAndMenorAscabToolStripMenuItem.Size = new System.Drawing.Size(282, 22);
+            this.intercalarMayorDescAndMenorAscabToolStripMenuItem.Text = "IntercalarMayorDescAndMenorAsc(a,b)";
+            this.intercalarMayorDescAndMenorAscabToolStripMenuItem.Click += new System.EventHandler(this.intercalarMayorDescAndMenorAscabToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -347,6 +356,7 @@
         private System.Windows.Forms.ToolStripMenuItem cargarrndnoRepToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cargarfiboYFrecToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem practico20232ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem intercalarMayorDescAndMenorAscabToolStripMenuItem;
     }
 }
 
