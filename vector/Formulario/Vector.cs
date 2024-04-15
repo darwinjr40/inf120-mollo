@@ -183,6 +183,18 @@ namespace Formulario
             return ( pos > 0);
         }
 
+        public int BusqElemMay(int m)
+        {
+            int may = v[m];
+            for (int i = 1; i <= this.n; i++)
+            {
+                if ( (i%m == 0) && (v[i]>may) )
+                {
+                    may = v[i];
+                }
+            }
+            return may;
+        }
         //-----------------------------------------------------------
         public void Intersec(Vector v1, Vector v2)
         {
@@ -460,6 +472,24 @@ namespace Formulario
             n = n + 1;
             f.v[m + 1] = fr;
             f.n++;
+        }
+
+        //2023-2R-#2------------------------------
+        public void LoadElemAndFrecMayor(int a, int b, ref int e, ref int f)
+        {
+            int ele, fr;
+            e = v[a];
+            f = GetFrec(a, b, e);
+            for (int i = a+1; i < b; i++)
+            {
+                ele = v[i];
+                fr = GetFrec(a, b, ele);
+                if (fr > f)
+                {
+                    e = ele;
+                    f = fr;
+                }
+            }
         }
         //Practico 2023-2 ------------------------------
         public double GetMediaPos(int m)

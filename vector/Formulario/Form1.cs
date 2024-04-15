@@ -220,8 +220,8 @@ namespace Formulario
             //textBox5.Text = media.ToString();
             try
             {
-                int a = int.Parse(textBox2.Text);
-                int b = int.Parse(textBox3.Text);
+                //int a = int.Parse(textBox2.Text);
+                //int b = int.Parse(textBox3.Text);
                 //this.vector.Invertir(a, b);
                 //this.vector.Invertir();
                 //this.vector.SegCapiAndNotCapi();
@@ -235,8 +235,13 @@ namespace Formulario
                 //textBox5.Text = "Diferentes: " + cantElem.ToString();
 
                 //DeletePosMult
+                //int m = int.Parse(Interaction.InputBox("", "ingrese valor para m:", ""));
+                //vector.DeletePosMult(1, vector.GetN(), m);
+
+                //--BusqElemMay
                 int m = int.Parse(Interaction.InputBox("", "ingrese valor para m:", ""));
-                vector.DeletePosMult(1, vector.GetN(), m);
+                int resp = vector.BusqElemMay(m);
+                textBox5.Text = resp.ToString();
             }
             catch (Exception ex)
             {
@@ -246,10 +251,19 @@ namespace Formulario
         }
 
         private void intercalarMayorDescAndMenorAscabToolStripMenuItem_Click(object sender, EventArgs e)
-        {            
-                int a = int.Parse(textBox2.Text);
-                int b = int.Parse(textBox3.Text);
-                vector.IntercalarMayorDescAndMenorAsc(a, b);            
+        {
+            //---examen 2023-2R-#1
+            //int a = int.Parse(textBox2.Text);
+            //int b = int.Parse(textBox3.Text);
+                //vector.IntercalarMayorDescAndMenorAsc(a, b);            
+            //---examen 2023-2R-#2
+            int a = int.Parse(textBox2.Text);
+            int b = int.Parse(textBox3.Text);
+            int elemento = -1;
+            int frecuencia = -1;
+            vector.LoadElemAndFrecMayor(a, b, ref elemento,  ref frecuencia);
+            textBox5.Text = elemento.ToString() + " , " + frecuencia.ToString();
+            //--
         }
     }
 }
