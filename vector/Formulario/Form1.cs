@@ -265,5 +265,17 @@ namespace Formulario
             textBox5.Text = elemento.ToString() + " , " + frecuencia.ToString();
             //--
         }
+
+        private void practicoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.vector.DifV1WithV2(this.vector1, this.vector2);
+            }
+            catch (Exception ex)
+            {
+                Interaction.MsgBox(ex.Message);                 
+            }                       
+        }
     }
 }

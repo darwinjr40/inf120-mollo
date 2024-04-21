@@ -346,6 +346,20 @@ namespace Formulario
                 if ( (! v1.Pertenece(v2.v[i])) && (!this.Pertenece(v2.v[i])))
                     this.addElem(v2.v[i]);
         }
+        //V{4,7,6,1,8,2} y Ve{V=5,7,9,4,1} => Vr{6,8,2}
+        public void DifV1WithV2(Vector v1, Vector v2)
+        {
+            this.n = 0;
+            for (int i = 1; i <= v1.n; i++)
+            {
+                int e = v1.v[i];
+                if ( ! v2.Pertenece(e))
+                {
+                    n = n + 1;
+                    v[n] = e;
+                }
+            }
+        }
         //-----------------------------------------------------------
         public void DeleteYDejarElemUnicos(int a, int b)
         {
