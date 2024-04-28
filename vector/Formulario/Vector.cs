@@ -393,7 +393,7 @@ namespace Formulario
             int pos = a;
             a++;
             while (a <= b){
-                if (this.v[a] < this.v[pos])                   
+                if (this.v[pos] > this.v[a])                   
                     pos = a;
                 a++;    
             }
@@ -408,10 +408,9 @@ namespace Formulario
         }
         //ordenar los extremos de manera ascendente
         public void EndsSort(int a, int b){
-            bool sw = true;
-            int pos;
+            bool sw = true;            
             while (a < b) {
-                pos = this.GetPosElemMenor(a, b);
+                int pos = this.GetPosElemMenor(a, b);
                 if (sw){                                     
                     this.Inter(a, pos);                      
                     a++;
@@ -590,6 +589,30 @@ namespace Formulario
                 }
                 sw = !sw;
             } 
+        }
+
+        //-----------------------------------------------------
+        public void SegRepyNoRep()
+        {
+            this.SegRepyNoRep(1, n);
+        }
+        public void SegRepyNoRep(int a, int b)
+        {            
+            for (int i = 1; i <= b - 1; i++)
+            {
+                for (int j = i + 1; j <= b; j++)
+                {
+                    int fi = this.GetFrec(a,b,v[i]);
+                    int fj = this.GetFrec(a,b,v[j]);
+                    if (   (fi == 1 && fj > 1)
+                        || (fi > 1 && fj > 1 && v[i] < v[j])
+                        || (fi == 1 && fj == 1 && v[i] < v[j])
+                        )
+                    {
+                        this.Inter(i, j);
+                    }
+                }
+            }
         }
 
     }

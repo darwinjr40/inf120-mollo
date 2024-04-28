@@ -270,7 +270,10 @@ namespace Formulario
         {
             try
             {
-                this.vector.DifV1WithV2(this.vector1, this.vector2);
+                //this.vector.DifV1WithV2(this.vector1, this.vector2);
+                //int a = int.Parse(textBox2.Text);
+                //int b = int.Parse(textBox3.Text);
+                this.vector.SegRepyNoRep();
             }
             catch (Exception ex)
             {
